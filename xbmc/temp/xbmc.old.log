@@ -1,0 +1,177 @@
+﻿19:11:35 T:140267366946752  NOTICE: special://profile/ is mapped to: special://masterprofile/
+19:11:35 T:140267366946752  NOTICE: -----------------------------------------------------------------------
+19:11:35 T:140267366946752  NOTICE: Starting XBMC (13.0 Git:d420b5c). Platform: x86 Linux 64-bit
+19:11:35 T:140267366946752  NOTICE: Using Release XBMC x64 build, compiled May  6 2014 by GCC 4.8.2 for x86 Linux 64-bit 3.13.9
+19:11:35 T:140267366946752  NOTICE: Running on Linux 64-bit (Ubuntu 14.04 LTS, 3.13.0-24-generic x86_64)
+19:11:35 T:140267366946752  NOTICE: Host CPU: Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz, 4 cores available
+19:11:35 T:140267366946752  NOTICE: special://xbmc/ is mapped to: /usr/share/xbmc
+19:11:35 T:140267366946752  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/xbmc
+19:11:35 T:140267366946752  NOTICE: special://masterprofile/ is mapped to: /home/seba/.xbmc/userdata
+19:11:35 T:140267366946752  NOTICE: special://home/ is mapped to: /home/seba/.xbmc
+19:11:35 T:140267366946752  NOTICE: special://temp/ is mapped to: /home/seba/.xbmc/temp
+19:11:35 T:140267366946752  NOTICE: The executable running is: /usr/lib/xbmc/xbmc.bin
+19:11:35 T:140267366946752  NOTICE: Local hostname: seba-laptop
+19:11:35 T:140267366946752  NOTICE: Log File is located: /home/seba/.xbmc/temp/xbmc.log
+19:11:35 T:140267366946752  NOTICE: -----------------------------------------------------------------------
+19:11:35 T:140267366946752  NOTICE: load settings...
+19:11:35 T:140267366946752  NOTICE: Found 1 Lists of Devices
+19:11:35 T:140267366946752  NOTICE: Enumerated PULSE devices:
+19:11:35 T:140267366946752  NOTICE:     Device 1
+19:11:35 T:140267366946752  NOTICE:         m_deviceName      : Default
+19:11:35 T:140267366946752  NOTICE:         m_displayName     : Default
+19:11:35 T:140267366946752  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+19:11:35 T:140267366946752  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:11:35 T:140267366946752  NOTICE:         m_channels        : FL,FR
+19:11:35 T:140267366946752  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:11:35 T:140267366946752  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_S16NE,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE3,AE_FMT_S24LE4,AE_FMT_S24BE4,AE_FMT_S24NE4,AE_FMT_S32BE,AE_FMT_S32LE,AE_FMT_S32NE,AE_FMT_FLOAT
+19:11:35 T:140267366946752  NOTICE:     Device 2
+19:11:35 T:140267366946752  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
+19:11:35 T:140267366946752  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+19:11:35 T:140267366946752  NOTICE:         m_displayNameExtra: Headphones (PULSEAUDIO)
+19:11:35 T:140267366946752  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:11:35 T:140267366946752  NOTICE:         m_channels        : FL,FR
+19:11:35 T:140267366946752  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:11:35 T:140267366946752  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_S16NE,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE3,AE_FMT_S24LE4,AE_FMT_S24BE4,AE_FMT_S24NE4,AE_FMT_S32BE,AE_FMT_S32LE,AE_FMT_S32NE,AE_FMT_FLOAT
+19:11:35 T:140267366946752  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+19:11:35 T:140267366946752  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+19:11:35 T:140267366946752  NOTICE: Default DVD Player: dvdplayer
+19:11:35 T:140267366946752  NOTICE: Default Video Player: dvdplayer
+19:11:35 T:140267366946752  NOTICE: Default Audio Player: paplayer
+19:11:35 T:140267366946752  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+19:11:35 T:140267366946752  NOTICE: Log level changed to 0
+19:11:35 T:140267366946752  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
+19:11:35 T:140267366946752  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+19:11:35 T:140267366946752  NOTICE: Loaded playercorefactory configuration
+19:11:35 T:140267366946752  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+19:11:35 T:140267366946752  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+19:11:35 T:140266903295744  NOTICE: Thread ActiveAE start, auto delete: false
+19:11:35 T:140266961942272  NOTICE: Thread AESink start, auto delete: false
+19:11:35 T:140267366946752  NOTICE: Running database version Addons16
+19:11:35 T:140267366946752  NOTICE: ADDONS: Using repository repository.xbmc.org
+19:11:35 T:140266935953152  NOTICE: Thread PeripBusCEC start, auto delete: false
+19:11:35 T:140266927560448  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
+19:11:35 T:140267366946752  NOTICE: Setup SDL
+19:11:35 T:140267366946752  NOTICE: Checking resolution 16
+19:11:35 T:140267366946752  NOTICE: Using visual 0x41
+19:11:35 T:140267366946752  NOTICE: GL_VENDOR = Intel Open Source Technology Center
+19:11:35 T:140267366946752  NOTICE: GL_RENDERER = Mesa DRI Intel(R) Ivybridge Mobile
+19:11:35 T:140267366946752  NOTICE: GL_VERSION = 3.0 Mesa 10.1.0
+19:11:35 T:140267366946752  NOTICE: GL_SHADING_LANGUAGE_VERSION = 1.30
+19:11:35 T:140267366946752  NOTICE: GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_envmap_bumpmap GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_performance_monitor GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_separate_shader_objects GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_shader_bit_encoding GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_shader_trinary_minmax GL_ARB_ES3_compatibility GL_ARB_clear_buffer_object GL_ARB_invalidate_subdata GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_vertex_attrib_binding GL_KHR_debug GL_ARB_texture_mirror_clamp_to_edge GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_shader_integer_mix
+19:11:35 T:140267366946752   ERROR: GLX: Same window as before, refreshing context
+19:11:35 T:140267366946752  NOTICE: No Joystick name specified, loading default map
+19:11:35 T:140267366946752  NOTICE: Previous line repeats 35 times.
+19:11:35 T:140267366946752  NOTICE: Running database version Addons16
+19:11:35 T:140267366946752  NOTICE: Running database version ViewModes6
+19:11:35 T:140267366946752  NOTICE: Running database version Textures13
+19:11:35 T:140267366946752  NOTICE: Running database version MyMusic46
+19:11:35 T:140267366946752  NOTICE: Running database version MyVideos78
+19:11:35 T:140267366946752  NOTICE: Running database version TV22
+19:11:35 T:140267366946752  NOTICE: Running database version Epg7
+19:11:35 T:140267366946752  NOTICE: start dvd mediatype detection
+19:11:35 T:140267366946752  NOTICE: initializing playlistplayer
+19:11:35 T:140267366946752  NOTICE: DONE initializing playlistplayer
+19:11:35 T:140267365865216  NOTICE: Thread DetectDVDMedia start, auto delete: false
+19:11:35 T:140267366946752 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
+19:11:35 T:140267366946752 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+19:11:35 T:140266550200064  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:11:35 T:140267366946752  NOTICE: UpdateLibraries - Starting video library startup scan
+19:11:35 T:140267366946752  NOTICE: UpdateLibraries - Starting music library startup scan
+19:11:35 T:140266541020928  NOTICE: Thread VideoInfoScanner start, auto delete: false
+19:11:35 T:140267366946752  NOTICE: initialize done
+19:11:35 T:140267366946752  NOTICE: Running the application...
+19:11:35 T:140266532366080  NOTICE: Thread MusicInfoScanner start, auto delete: false
+19:11:35 T:140266550200064  NOTICE: -->Python Interpreter Initialized<--
+19:11:35 T:140266300331776  NOTICE: Thread JobWorker start, auto delete: true
+19:11:35 T:140267366946752  NOTICE: starting zeroconf publishing
+19:11:35 T:140267366946752  NOTICE: ES: Starting event server
+19:11:35 T:140266275153664  NOTICE: Thread EventServer start, auto delete: false
+19:11:35 T:140266275153664  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
+19:11:35 T:140266275153664  NOTICE: UDP: Listening on port 9777
+19:11:35 T:140266541020928  NOTICE: VideoInfoScanner: Starting scan ..
+19:11:35 T:140266283546368  NOTICE: Thread JobWorker start, auto delete: true
+19:11:35 T:140265847256832  NOTICE: Thread MusicFileCounter start, auto delete: false
+19:11:35 T:140266532366080  NOTICE: My Music: Scanning for music info using worker thread, operation took 00:00
+19:11:35 T:140266266760960  NOTICE: Thread TCPServer start, auto delete: false
+19:11:35 T:140266258368256  NOTICE: Thread AlarmClock start, auto delete: false
+19:11:35 T:140266541020928  NOTICE: VideoInfoScanner: Finished scan. Scanning for video info took 00:00
+19:11:35 T:140267365865216  NOTICE: Thread RSSReader start, auto delete: false
+19:11:38 T:140267366946752   ERROR: GLX: Same window as before, refreshing context
+19:11:46 T:140266541020928   ERROR: Previous line repeats 1 times.
+19:11:46 T:140266541020928  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:12:05 T:140266541020928  NOTICE: Thread LanguageInvoker start, auto delete: false
+19:12:05 T:140266541020928  NOTICE: -->Python Interpreter Initialized<--
+19:12:26 T:140266541020928  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:12:45 T:140266532366080  NOTICE: Previous line repeats 3 times.
+19:12:45 T:140266532366080  NOTICE: Thread JobWorker start, auto delete: true
+19:12:59 T:140266550200064  NOTICE: Previous line repeats 1 times.
+19:12:59 T:140266550200064  NOTICE: Thread FileCache start, auto delete: false
+19:13:09 T:140266550200064  NOTICE: Thread JobWorker start, auto delete: true
+19:13:09 T:140266541020928  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:17:16 T:140266550200064  NOTICE: Previous line repeats 8 times.
+19:17:16 T:140266550200064  NOTICE: Thread JobWorker start, auto delete: true
+19:17:16 T:140266532366080  NOTICE: Thread BackgroundLoader start, auto delete: false
+19:19:50 T:140267366946752   ERROR: GLX: Same window as before, refreshing context
+19:20:09 T:140267366946752  NOTICE: OnSleep: Running sleep jobs
+19:20:09 T:140267366946752  NOTICE: OnSleep: Stopping lirc
+19:22:07 T:140267366946752  NOTICE: OnWake: Running resume jobs
+19:22:07 T:140267366946752  NOTICE: OnWake: Restarting lirc
+19:22:07 T:140266903295744  NOTICE: Found 1 Lists of Devices
+19:22:07 T:140266903295744  NOTICE: Enumerated PULSE devices:
+19:22:07 T:140266903295744  NOTICE:     Device 1
+19:22:07 T:140266903295744  NOTICE:         m_deviceName      : Default
+19:22:07 T:140266903295744  NOTICE:         m_displayName     : Default
+19:22:07 T:140266903295744  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+19:22:07 T:140266903295744  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:22:07 T:140266903295744  NOTICE:         m_channels        : FL,FR
+19:22:07 T:140266903295744  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:22:07 T:140266903295744  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_S16NE,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE3,AE_FMT_S24LE4,AE_FMT_S24BE4,AE_FMT_S24NE4,AE_FMT_S32BE,AE_FMT_S32LE,AE_FMT_S32NE,AE_FMT_FLOAT
+19:22:07 T:140266903295744  NOTICE:     Device 2
+19:22:07 T:140266903295744  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
+19:22:07 T:140266903295744  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+19:22:07 T:140266903295744  NOTICE:         m_displayNameExtra: Speakers (PULSEAUDIO)
+19:22:07 T:140266903295744  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+19:22:07 T:140266903295744  NOTICE:         m_channels        : FL,FR
+19:22:07 T:140266903295744  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+19:22:07 T:140266903295744  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16LE,AE_FMT_S16BE,AE_FMT_S16NE,AE_FMT_S24LE3,AE_FMT_S24BE3,AE_FMT_S24NE3,AE_FMT_S24LE4,AE_FMT_S24BE4,AE_FMT_S24NE4,AE_FMT_S32BE,AE_FMT_S32LE,AE_FMT_S32NE,AE_FMT_FLOAT
+19:22:07 T:140267366946752  NOTICE: UpdateLibraries - Starting video library startup scan
+19:22:07 T:140267366946752  NOTICE: UpdateLibraries - Starting music library startup scan
+19:22:07 T:140266953549568  NOTICE: Thread VideoInfoScanner start, auto delete: false
+19:22:07 T:140266532366080  NOTICE: Thread MusicInfoScanner start, auto delete: false
+19:22:07 T:140266953549568  NOTICE: VideoInfoScanner: Starting scan ..
+19:22:07 T:140266300331776  NOTICE: Thread MusicFileCounter start, auto delete: false
+19:22:07 T:140266532366080  NOTICE: My Music: Scanning for music info using worker thread, operation took 00:00
+19:22:07 T:140266953549568  NOTICE: VideoInfoScanner: Finished scan. Scanning for video info took 00:00
+19:22:41 T:140267366946752   ERROR: GLX: Same window as before, refreshing context
+19:23:09 T:140266953549568  NOTICE: Thread JobWorker start, auto delete: true
+19:23:14 T:140267366946752  NOTICE: Storing total System Uptime
+19:23:14 T:140267366946752  NOTICE: Saving settings
+19:23:14 T:140267366946752  NOTICE: stop all
+19:23:14 T:140267366946752  NOTICE: stop player
+19:23:14 T:140267366946752  NOTICE: ES: Stopping event server
+19:23:14 T:140267366946752  NOTICE: stopping zeroconf publishing
+19:23:14 T:140266275153664  NOTICE: ES: UDP Event server stopped
+19:23:14 T:140267366946752  NOTICE: stop dvd detect media
+19:23:15 T:140267366946752  NOTICE: stop sap announcement listener
+19:23:15 T:140267366946752  NOTICE: clean cached files!
+19:23:15 T:140267366946752  NOTICE: unload skin
+19:23:15 T:140267366946752  NOTICE: stopped
+19:23:15 T:140267366946752  NOTICE: destroy
+19:23:15 T:140267366946752  NOTICE: closing down remote control service
+19:23:15 T:140267366946752  NOTICE: unload sections
+19:23:15 T:140267366946752  NOTICE: special://profile/ is mapped to: special://masterprofile/
+19:23:15 T:140267366946752  NOTICE: destroy
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
+19:23:15 T:140267366946752 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
+19:23:15 T:140267366946752  NOTICE: closing down remote control service
+19:23:15 T:140267366946752  NOTICE: unload sections
+19:23:15 T:140267366946752  NOTICE: application stopped...

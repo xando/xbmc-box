@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colors>
+		<color name="MainColor">FFFFFFFF</color>
+		<color name="AlternateColor">FFaaaaaa</color>
+        <color name="AlternateBrightColor">FFcccccc</color>
+		<color name="SelectedColor">ffffffff</color>
+		<color name="DisabledColor">FF606060</color>
+		<color name="ListFocusColor">FFFFFFFF</color>
+		<color name="SublistFocusColor">FFcccccc</color>
+		<color name="ListNoFocusColor">FFaaaaaa</color>
+		<color name="SublistNoFocusColor">FF777777</color>
+		<color name="FacadeNumItemsColor">FFcccccc</color>
+		<color name="WindowTitleColor">70FFFFFF</color>
+		<color name="WindowTitleSubColor">55ffffff</color>
+		<color name="NoFocusedColor">90ffffff</color>
+		<color name="NoFocusedProgressColor">45ffffff</color>
+		<color name="FocusedProgressColor">90ffffff</color>
+		<color name="EmptyThumbColor">ffffffff</color>
+        <color name="UnfocusedIconColor">ffffffff</color>
+        <color name="FacadeOverlayColor">15ffffff</color>
+        <color name="WarningColor">FFfe3737</color>
+		<color name="ShadowColor">FF000000</color>
+        <!-- ADDON COMPATIBILITY -->
+        <color name="white">FFFFFF</color>
+        <color name="grey">FFaaaaaa</color>
+        <color name="black">FF000000</color>
+        <color name="blue">FFcccccc</color>
+</colors>
