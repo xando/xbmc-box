@@ -7,14 +7,17 @@
   tasks:
     - shell: "locale-gen pl_PL.UTF-8 en_GB.UTF-8"
 
+
     # GnomeShell
     - apt: pkg=gnome-shell
+
 
     # GDM
     - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
 
+
     # XMBC
-    - apt: pkg=python-software-properties 
+    - apt: pkg=python-software-properties
     - apt: pkg=pkg-config
     - apt: pkg=software-properties-common
     - apt_repository: repo='ppa:team-xbmc/ppa' state=present update_cache=yes
@@ -24,5 +27,10 @@
 
 
     # Samba
-    
-      
+    - apt: pkg=samba
+    - template: src=templates/smb.conf dest=/etc/samba/smb.conf
+
+    - file: path=/home/{{ USER }}/Video owner=nobody group=nogroup mode=0777 state=directory
+    - file: path=/home/{{ USER }}/Music owner=nobody group=nogroup mode=0777 state=directory
+
+    - service: name=smbd state=restarted
