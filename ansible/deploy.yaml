@@ -1,0 +1,28 @@
+- hosts: all
+  sudo: yes
+
+  vars:
+    USER: vagrant
+
+  tasks:
+    - shell: "locale-gen pl_PL.UTF-8 en_GB.UTF-8"
+
+    # GnomeShell
+    - apt: pkg=gnome-shell
+
+    # GDM
+    - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
+
+    # XMBC
+    - apt: pkg=python-software-properties 
+    - apt: pkg=pkg-config
+    - apt: pkg=software-properties-common
+    - apt_repository: repo='ppa:team-xbmc/ppa' state=present update_cache=yes
+    - apt: pkg=xbmc
+    - apt: pkg=xinit # we will need that for upstart script
+    - template: src=templates/xbmc-upstart.conf dest=/etc/init/xbmc.conf
+
+
+    # Samba
+    
+      

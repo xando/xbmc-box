@@ -1,0 +1,3 @@
+*.pyc
+.vagrant
+.DS_Store
