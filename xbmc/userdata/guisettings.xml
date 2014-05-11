@@ -1,5 +1,4 @@
 <settings>
-
     <audiocds>
         <autoaction default="true">0</autoaction>
         <bitrate default="true">192</bitrate>
@@ -356,9 +355,9 @@
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <preferedstereoscopicmode default="true">0</preferedstereoscopicmode>
-        <resolution>15</resolution>
-        <screen>-1</screen>
-        <screenmode>WINDOW</screenmode>
+        <resolution default="true">16</resolution>
+        <screen default="true">0</screen>
+        <screenmode default="true">DESKTOP</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">3</vsync>
     </videoscreen>
@@ -566,5 +565,4 @@
         <mute>false</mute>
         <fvolumelevel>0.188883</fvolumelevel>
     </audio>
-
 </settings>

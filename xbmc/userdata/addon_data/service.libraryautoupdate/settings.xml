@@ -16,7 +16,7 @@
     <setting id="custom_3_scan_path" value="" />
     <setting id="custom_3_timer" value="2" />
     <setting id="help_button" value="" />
-    <setting id="last_run" value="1399842660.0" />
+    <setting id="last_run" value="1399843320.0" />
     <setting id="library_to_clean" value="0" />
     <setting id="music_advanced_timer" value="true" />
     <setting id="music_cron_expression" value="*/5 * * * *" />
