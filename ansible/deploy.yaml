@@ -14,6 +14,7 @@
 
     # GDM
     - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
+    - synchronize: src=../xbmc dest=/home/{{ USER }}/.xbmc  recursive=yes delete=yes rsync_path="sudo -u {{ USER }} rsync" rsync_timeout=180
 
 
     # XMBC
