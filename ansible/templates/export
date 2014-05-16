@@ -1,0 +1,2 @@
+/home/{{ USER }}/Music    *(rw,sync,no_subtree_check)
+/home/{{ USER }}/Video    *(rw,sync,no_subtree_check)

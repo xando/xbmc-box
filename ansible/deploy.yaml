@@ -26,11 +26,22 @@
 
     
     # Shares General
-    - file: path=/home/{{ USER }}/Video owner=nobody group=nogroup mode=0777 state=directory
-    - file: path=/home/{{ USER }}/Music owner=nobody group=nogroup mode=0777 state=directory
+    - file: path=/home/{{ USER }}/Video state=directory
+    - file: path=/home/{{ USER }}/Music state=directory
     
     # Shares Samba
     - apt: pkg=samba
     - template: src=templates/smb.conf dest=/etc/samba/smb.conf
-
     - service: name=smbd state=restarted
+
+    # Shares AFP 
+    - apt: pkg=netatalk
+    - template: src=templates/avahi-service-afpd.service dest=/etc/avahi/services/afpd.service
+    - template: src=templates/AppleVolumes.default dest=/etc/netatalk/AppleVolumes.default
+    - service: name=netatalk state=restarted
+
+    # Shares NFS
+    - apt: pkg=nfs-kernel-server
+    - template: src=templates/export dest=/etc/exports
+    - command: exportfs -a
+    - service: name=nfs-kernel-server state=restarted

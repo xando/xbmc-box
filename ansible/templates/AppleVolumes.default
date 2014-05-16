@@ -1,0 +1,8 @@
+# The line below sets some DEFAULT, starting with Netatalk 2.1.
+:DEFAULT: options:upriv,usedots
+
+# By default all users have access to their home directories.
+/home/{{ USER }}/Music       "Music"
+/home/{{ USER }}/Video       "Video"
+
+# End of File
