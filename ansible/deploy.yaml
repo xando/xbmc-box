@@ -5,19 +5,16 @@
     USER: vagrant
 
   tasks:
-    - shell: "locale-gen pl_PL.UTF-8 en_GB.UTF-8"
+    - shell: "locale-gen en_US.UTF-8"
 
+    # # GnomeShell
+    # - apt: pkg=gnome-shell
 
-    # GnomeShell
-    - apt: pkg=gnome-shell
-
-
-    # GDM
-    - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
-    - synchronize: src=../xbmc dest=/home/{{ USER }}/.xbmc  recursive=yes delete=yes rsync_path="sudo -u {{ USER }} rsync" rsync_timeout=180
-
+    # # GDM
+    # - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
 
     # XMBC
+    - synchronize: src=../xbmc dest=/home/{{ USER }}/.xbmc  recursive=yes delete=yes rsync_path="sudo -u {{ USER }} rsync" rsync_timeout=180
     - apt: pkg=python-software-properties
     - apt: pkg=pkg-config
     - apt: pkg=software-properties-common
@@ -27,12 +24,13 @@
     - template: src=templates/xbmc-upstart.conf dest=/etc/init/xbmc.conf
     - template: src=templates/Xwrapper.config dest=/etc/X11/Xwrapper.config
 
-
-    # Samba
-    - apt: pkg=samba
-    - template: src=templates/smb.conf dest=/etc/samba/smb.conf
-
+    
+    # Shares General
     - file: path=/home/{{ USER }}/Video owner=nobody group=nogroup mode=0777 state=directory
     - file: path=/home/{{ USER }}/Music owner=nobody group=nogroup mode=0777 state=directory
+    
+    # Shares Samba
+    - apt: pkg=samba
+    - template: src=templates/smb.conf dest=/etc/samba/smb.conf
 
     - service: name=smbd state=restarted
