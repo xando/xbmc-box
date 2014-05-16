@@ -24,6 +24,7 @@
     - apt: pkg=xbmc
     - apt: pkg=xinit # we will need that for upstart script
     - template: src=templates/xbmc-upstart.conf dest=/etc/init/xbmc.conf
+    - template: src=templates/Xwrapper.config dest=/etc/X11/Xwrapper.config
 
 
     # Samba
