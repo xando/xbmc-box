@@ -1,3 +1,7 @@
 *.pyc
 .vagrant
 .DS_Store
+xbmc/userdata/addon_data/
+xbmc/userdata/Thumbnails/
+xbmc/temp/
+xbmc/userdata/Database/
