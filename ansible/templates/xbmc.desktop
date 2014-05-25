@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/xbmc
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=XBMC
+Name=XBMC
+Comment[en_US]=XBMC Media Center.
+Comment=XBMC Media Center.

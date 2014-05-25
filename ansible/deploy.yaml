@@ -2,46 +2,75 @@
   sudo: yes
 
   vars:
-    USER: vagrant
+    USER: jozek
 
   tasks:
     - shell: "locale-gen en_US.UTF-8"
 
-    # # GnomeShell
-    # - apt: pkg=gnome-shell
 
-    # # GDM
-    # - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
+
+    # GnomeShell
+    - apt: pkg=gnome-shell
+
+
+
+    # GDM
+    - template: src=templates/gdm.conf dest=/etc/gdm/custom.conf
+
+
 
     # XMBC
-    - synchronize: src=../xbmc dest=/home/{{ USER }}/.xbmc  recursive=yes delete=yes rsync_path="sudo -u {{ USER }} rsync" rsync_timeout=180
+    - synchronize: src=../xbmc/ dest=/home/{{ USER }}/.xbmc  recursive=yes delete=yes rsync_path="sudo -u {{ USER }} rsync" rsync_timeout=180
     - apt: pkg=python-software-properties
     - apt: pkg=pkg-config
     - apt: pkg=software-properties-common
     - apt_repository: repo='ppa:team-xbmc/ppa' state=present update_cache=yes
-    - apt: pkg=xbmc
-    - apt: pkg=xinit # we will need that for upstart script
-    - template: src=templates/xbmc-upstart.conf dest=/etc/init/xbmc.conf
-    - template: src=templates/Xwrapper.config dest=/etc/X11/Xwrapper.config
+    # XBMC - Autostart
+    - file: path=/home/{{ USER }}/.config/autostart/ state=directory owner={{ USER }}
+    - template: src=templates/xbmc.desktop dest=/home/{{ USER }}/.config/autostart/xbmc.desktop owner={{ USER }}
+
+
+
+    # Shares General
+    - file: path=/home/dataHDD/             state=directory owner={{ USER }}
+
+    - file: path=/home/dataHDD/Movies       state=directory owner={{ USER }}
+    - file: path=/home/dataHDD/TvShows      state=directory owner={{ USER }}
+    - file: path=/home/dataHDD/Music        state=directory owner={{ USER }}
+    - file: path=/home/dataHDD/Other        state=directory owner={{ USER }}
+
+    - file: path=/home/{{ USER }}/Movies    state=absent
+    - file: path=/home/{{ USER }}/TvShows   state=absent
+    - file: path=/home/{{ USER }}/Music     state=absent
+    - file: path=/home/{{ USER }}/Other     state=absent
+
+    - file: src=/home/dataHDD/Movies        dest=/home/{{ USER }}/Movies    state=link 
+    - file: src=/home/dataHDD/TvShows       dest=/home/{{ USER }}/TvShows   state=link 
+    - file: src=/home/dataHDD/Music         dest=/home/{{ USER }}/Music     state=link
+    - file: src=/home/dataHDD/Other         dest=/home/{{ USER }}/Other state=link
 
     
-    # Shares General
-    - file: path=/home/{{ USER }}/Video state=directory
-    - file: path=/home/{{ USER }}/Music state=directory
-    
+
     # Shares Samba
     - apt: pkg=samba
     - template: src=templates/smb.conf dest=/etc/samba/smb.conf
     - service: name=smbd state=restarted
 
-    # Shares AFP 
-    - apt: pkg=netatalk
-    - template: src=templates/avahi-service-afpd.service dest=/etc/avahi/services/afpd.service
-    - template: src=templates/AppleVolumes.default dest=/etc/netatalk/AppleVolumes.default
-    - service: name=netatalk state=restarted
 
-    # Shares NFS
-    - apt: pkg=nfs-kernel-server
-    - template: src=templates/export dest=/etc/exports
-    - command: exportfs -a
-    - service: name=nfs-kernel-server state=restarted
+
+    # # Shares AFP 
+    # - apt: pkg=netatalk
+    # - template: src=templates/avahi-service-afpd.service dest=/etc/avahi/services/afpd.service
+    # - template: src=templates/AppleVolumes.default dest=/etc/netatalk/AppleVolumes.default
+    # - service: name=netatalk state=restarted
+
+    # # Shares NFS
+    # - apt: pkg=nfs-kernel-server
+    # - template: src=templates/export dest=/etc/exports
+    # - command: exportfs -a
+    # - service: name=nfs-kernel-server state=restarted
+
+
+
+    # Gnome configuration
+    - command: gsettings set org.gnome.desktop.session idle-delay 0
