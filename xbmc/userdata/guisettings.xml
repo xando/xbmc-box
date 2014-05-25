@@ -79,8 +79,8 @@
         <addonautoupdate default="true">true</addonautoupdate>
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
-        <settinglevel>1</settinglevel>
-        <systemtotaluptime>26</systemtotaluptime>
+        <settinglevel>2</settinglevel>
+        <systemtotaluptime>842</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -98,22 +98,22 @@
     </karaoke>
     <locale>
         <audiolanguage default="true">original</audiolanguage>
-        <charset>ISO-8859-2</charset>
-        <country>Central Europe</country>
+        <charset default="true">DEFAULT</charset>
+        <country default="true">USA (12h)</country>
         <language default="true">English</language>
         <subtitlelanguage default="true">original</subtitlelanguage>
         <timezone default="true">Europe/Warsaw</timezone>
         <timezonecountry default="true">Poland</timezonecountry>
     </locale>
     <lookandfeel>
-        <enablerssfeeds default="true">true</enablerssfeeds>
+        <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin default="true">skin.confluence</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin default="true">SKINDEFAULT</soundskin>
+        <soundskin>OFF</soundskin>
         <startupwindow default="true">10000</startupwindow>
     </lookandfeel>
     <masterlock>
@@ -133,7 +133,7 @@
     <musiclibrary>
         <albumsscraper default="true">metadata.album.universal</albumsscraper>
         <artistsscraper default="true">metadata.artists.universal</artistsscraper>
-        <backgroundupdate default="true">false</backgroundupdate>
+        <backgroundupdate>true</backgroundupdate>
         <downloadinfo default="true">false</downloadinfo>
         <enabled default="true">true</enabled>
         <overridetags default="true">false</overridetags>
@@ -154,7 +154,7 @@
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
         <songthumbinvis default="true">false</songthumbinvis>
-        <startwindow default="true">10501</startwindow>
+        <startwindow>10502</startwindow>
         <playlist>
             <repeat>false</repeat>
             <shuffle>false</shuffle>
@@ -164,7 +164,7 @@
     <myvideos>
         <extractflags default="true">true</extractflags>
         <extractthumb default="true">true</extractthumb>
-        <flatten default="true">false</flatten>
+        <flatten>true</flatten>
         <replacelabels default="true">true</replacelabels>
         <selectaction default="true">1</selectaction>
         <stackvideos default="true">false</stackvideos>
@@ -188,7 +188,7 @@
         <usehttpproxy default="true">false</usehttpproxy>
     </network>
     <pictures>
-        <displayresolution default="true">14</displayresolution>
+        <displayresolution>16</displayresolution>
         <generatethumbs default="true">true</generatethumbs>
         <showvideos default="true">true</showvideos>
         <useexifrotation default="true">true</useexifrotation>
@@ -249,8 +249,8 @@
         <tvshowsdefault default="true">metadata.tvdb.com</tvshowsdefault>
     </scrapers>
     <screensaver>
-        <mode default="true">screensaver.xbmc.builtin.dim</mode>
-        <time>10</time>
+        <mode></mode>
+        <time default="true">3</time>
         <usedimonpause default="true">true</usedimonpause>
         <usemusicvisinstead default="true">true</usemusicvisinstead>
     </screensaver>
@@ -258,7 +258,7 @@
         <airplay>true</airplay>
         <airplaypassword default="true"></airplaypassword>
         <airplayvolumecontrol default="true">true</airplayvolumecontrol>
-        <devicename>TheBOX</devicename>
+        <devicename default="true">XBMC</devicename>
         <esallinterfaces default="true">false</esallinterfaces>
         <escontinuousdelay default="true">25</escontinuousdelay>
         <esenabled default="true">true</esenabled>
@@ -289,28 +289,28 @@
     </smb>
     <subtitles>
         <align default="true">0</align>
-        <charset default="true">DEFAULT</charset>
-        <color>6</color>
+        <charset>CP1250</charset>
+        <color default="true">1</color>
         <custompath default="true"></custompath>
         <font default="true">arial.ttf</font>
         <height default="true">28</height>
-        <languages>English,Polish</languages>
+        <languages default="true">English</languages>
         <movie>service.subtitles.opensubtitles</movie>
         <overrideassfonts default="true">false</overrideassfonts>
         <pauseonsearch default="true">true</pauseonsearch>
         <stereoscopicdepth default="true">0</stereoscopicdepth>
         <storagemode default="true">0</storagemode>
         <style default="true">1</style>
-        <tv>service.subtitles.opensubtitles</tv>
+        <tv>service.subtitles.napiprojekt</tv>
     </subtitles>
     <system>
         <playlistspath>special://profile/playlists/</playlistspath>
     </system>
     <videolibrary>
         <actorthumbs default="true">true</actorthumbs>
-        <backgroundupdate default="true">false</backgroundupdate>
+        <backgroundupdate>true</backgroundupdate>
         <enabled default="true">true</enabled>
-        <flattentvshows default="true">1</flattentvshows>
+        <flattentvshows>2</flattentvshows>
         <groupmoviesets default="true">false</groupmoviesets>
         <showunwatchedplots default="true">true</showunwatchedplots>
         <updateonstartup>true</updateonstartup>
@@ -371,7 +371,7 @@
     </window>
     <skinsettings>
         <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
-        <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.UseCustomBackground">true</setting>
         <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
         <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
         <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
@@ -382,11 +382,11 @@
         <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">true</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">true</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">true</setting>
         <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
         <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
@@ -395,23 +395,32 @@
         <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
         <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
         <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
-        <setting type="bool" name="skin.blackglassnova.FullscreenMusic">false</setting>
-        <setting type="bool" name="skin.blackglassnova.DebugInfo">false</setting>
-        <setting type="bool" name="skin.blackglassnova.DebugGrid">false</setting>
-        <setting type="bool" name="skin.blackglassnova.LayoutGrid">false</setting>
-        <setting type="bool" name="skin.blackglassnova.KenBurnsEffect">false</setting>
-        <setting type="bool" name="skin.blackglassnova.Show_Player">false</setting>
-        <setting type="bool" name="skin.blackglassnova.MusicPlayingFanart">false</setting>
-        <setting type="bool" name="skin.blackglassnova.plexbmc">false</setting>
-        <setting type="bool" name="skin.blackglassnova.AutoScroll">false</setting>
-        <setting type="bool" name="skin.back-row.NoTimeLabelsOSD">false</setting>
-        <setting type="bool" name="skin.back-row.clearart">false</setting>
-        <setting type="bool" name="skin.back-row.home-music-info">false</setting>
-        <setting type="bool" name="skin.back-row.Use Number of Items Label">false</setting>
-        <setting type="bool" name="skin.back-row.Use Library Info Labels">false</setting>
-        <setting type="bool" name="skin.back-row.TimeDate">false</setting>
-        <setting type="bool" name="skin.back-row.animated">false</setting>
-        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
+        <setting type="bool" name="skin.confluence.View509HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.DebugGrid">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Enable.SlimList">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.HorizontalListNav">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.KioskMode.Enabled">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Enable.AutoScroll">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.Videoinfo">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.Musicinfo">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Detach.RSS">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Enable.TvTunes">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.nohighlist">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.Disable.Resumable">false</setting>
+        <setting type="bool" name="skin.aeon.nox.5.DebugGrid">true</setting>
+        <setting type="bool" name="skin.aeon.nox.5.HideDebugInfo">false</setting>
+        <setting type="bool" name="skin.confluence.DebugInfo">true</setting>
+        <setting type="bool" name="skin.confluence.HideDebugInfo">false</setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath">/home/seba/Dropbox/Projects/xbmc-box/wallpaper-778651.jpg</setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
@@ -436,8 +445,165 @@
         <setting type="string" name="skin.confluence.LyricScript_Path"></setting>
         <setting type="string" name="skin.confluence.HomeProgramButton6"></setting>
         <setting type="string" name="skin.confluence.Home_Custom_Back_TV_Folder"></setting>
-        <setting type="string" name="skin.blackglassnova.Settings.Background"></setting>
-        <setting type="string" name="skin.back-row.CustomSetCat"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicGenreFanartPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.System.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherFanartDir"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Disable"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Label"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.MultiFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Icon"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Path"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Widget"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.WidgetLabel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.WidgetType"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.InfoLine"></setting>
+        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.SubMenu"></setting>
+        <setting type="string" name="skin.aeon.nox.5.InfoPanel.Delay"></setting>
+        <setting type="string" name="skin.aeon.nox.5.VideoGenreFanartPath"></setting>
+        <setting type="string" name="skin.aeon.nox.5.53.Movies.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.53.TVShows.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.53.Seasons.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.52.Movies.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.52.TVShows.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.52.Seasons.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.52.Episodes.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Movie.VideoFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShow.VideoFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Video.VideoFanart"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Movies.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.TVShows.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Videos.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.LiveTV.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Home_Custom_Back_TV_Folder"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Apps.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.54.Albums.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.54.Artists.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.52.Artists.InfoPanel"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Music.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Pictures.Fallback"></setting>
+        <setting type="string" name="skin.aeon.nox.5.Overlay.Toggle"></setting>
     </skinsettings>
     <resolutions />
     <defaultvideosettings>
@@ -543,10 +709,10 @@
             <sortattributes>0</sortattributes>
         </videonavseasons>
         <videonavtitles>
-            <viewmode>65536</viewmode>
-            <sortmethod>1</sortmethod>
+            <viewmode>66040</viewmode>
+            <sortmethod>27</sortmethod>
             <sortorder>1</sortorder>
-            <sortattributes>0</sortattributes>
+            <sortattributes>1</sortattributes>
         </videonavtitles>
         <videonavtvshows>
             <viewmode>65536</viewmode>
@@ -563,6 +729,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.188883</fvolumelevel>
+        <fvolumelevel>0.463332</fvolumelevel>
     </audio>
 </settings>

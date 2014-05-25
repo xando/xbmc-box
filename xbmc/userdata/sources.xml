@@ -5,13 +5,23 @@
     <video>
         <default pathversion="1"></default>
         <source>
-            <name>Videos</name>
-            <path pathversion="1">/home/seba/Videos/</path>
+            <name>TvShows</name>
+            <path pathversion="1">smb://JOZEK/TvShows/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Movies</name>
+            <path pathversion="1">smb://JOZEK/Movies/</path>
             <allowsharing>true</allowsharing>
         </source>
     </video>
     <music>
-        <default pathversion="1"></default>
+        <default pathversion="1">Music</default>
+        <source>
+            <name>Music</name>
+            <path pathversion="1">/home/seba/Jozek/Music/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </music>
     <pictures>
         <default pathversion="1"></default>

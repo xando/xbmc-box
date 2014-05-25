@@ -104,6 +104,7 @@ class Main:
         self.RANDOMITEMS_TIME = int(float(__addon__.getSetting("randomitems_time"))) * 60 * 2
 
     def _parse_argv( self ):
+        print "============================================================"
         try:
             params = dict( arg.split( "=" ) for arg in sys.argv[ 1 ].split( "&" ) )
         except:
@@ -199,13 +200,21 @@ class Main:
                     play = 'XBMC.RunScript(' + __addonid__ + ',movieid=' + str(item.get('movieid')) + ')'
                     streaminfo = media_streamdetails(item['file'].encode('utf-8').lower(),
                                                item['streamdetails'])
+                    if len(item['studio']) > 0:
+                        studio = item['studio'][0]
+                    else:
+                        studio = ""
+                    if len(item['country']) > 0:
+                        country = item['country'][0]
+                    else:
+                        country = ""
                     self.WINDOW.setProperty("%s.%d.DBID"           % (request, count), str(item.get('movieid')))
                     self.WINDOW.setProperty("%s.%d.Title"           % (request, count), item['title'])
                     self.WINDOW.setProperty("%s.%d.OriginalTitle"   % (request, count), item['originaltitle'])
                     self.WINDOW.setProperty("%s.%d.Year"            % (request, count), str(item['year']))
                     self.WINDOW.setProperty("%s.%d.Genre"           % (request, count), " / ".join(item['genre']))
-                    self.WINDOW.setProperty("%s.%d.Studio"          % (request, count), item['studio'][0])
-                    self.WINDOW.setProperty("%s.%d.Country"          % (request, count), item['country'][0])
+                    self.WINDOW.setProperty("%s.%d.Studio"          % (request, count), studio)
+                    self.WINDOW.setProperty("%s.%d.Country"         % (request, count), country)
                     self.WINDOW.setProperty("%s.%d.Plot"            % (request, count), plot)
                     self.WINDOW.setProperty("%s.%d.PlotOutline"     % (request, count), item['plotoutline'])
                     self.WINDOW.setProperty("%s.%d.Tagline"         % (request, count), item['tagline'])
@@ -277,6 +286,10 @@ class Main:
                     play = 'XBMC.RunScript(' + __addonid__ + ',episodeid=' + str(item2.get('episodeid')) + ')'
                     streaminfo = media_streamdetails(item['file'].encode('utf-8').lower(),
                                                      item2['streamdetails'])
+                    if len(item['studio']) > 0:
+                        studio = item['studio'][0]
+                    else:
+                        studio = ""
                     self.WINDOW.setProperty("%s.%d.DBID"                % (request, count), str(item2.get('episodeid')))
                     self.WINDOW.setProperty("%s.%d.Title"               % (request, count), item2['title'])
                     self.WINDOW.setProperty("%s.%d.Episode"             % (request, count), episode)
@@ -296,7 +309,7 @@ class Main:
                     self.WINDOW.setProperty("%s.%d.Art(tvshow.landscape)"% (request, count), art2.get('tvshow.landscape',''))
                     self.WINDOW.setProperty("%s.%d.Art(tvshow.characterart)"% (request, count), art2.get('tvshow.characterart',''))
                     #self.WINDOW.setProperty("%s.%d.Art(season.poster)" % (request, count), seasonthumb)
-                    self.WINDOW.setProperty("%s.%d.Studio"              % (request, count), item['studio'][0])
+                    self.WINDOW.setProperty("%s.%d.Studio"              % (request, count), studio)
                     self.WINDOW.setProperty("%s.%d.mpaa"                % (request, count), item['mpaa'])
                     self.WINDOW.setProperty("%s.%d.Resume"              % (request, count), resume)
                     self.WINDOW.setProperty("%s.%d.PercentPlayed"       % (request, count), played)
@@ -595,6 +608,7 @@ class Main:
             del json_query
 
     def _daemon(self):
+        log('onPlayBackStopped============================================================================================================')
         # deamon is meant to keep script running at all time
         count = 0
         home_update = False
@@ -623,6 +637,7 @@ class Main:
             self.WINDOW.clearProperty("%s.%d.Title" % (request, count))
 
     def _update(self, type):
+        log('onPlayBackStopped============================================================================================================')
         xbmc.sleep(1000)
         if type == 'movie':
             self._fetch_movies('RecommendedMovie')
@@ -653,6 +668,7 @@ class Main:
                 self._fetch_addon('RandomAddon')
 
 def media_path(path):
+    log('onPlayBackStopped============================================================================================================')
     # Check for stacked movies
     try:
         path = os.path.split(path)[0].rsplit(' , ', 1)[1].replace(",,",",")
@@ -743,6 +759,7 @@ class Widgets_Player(xbmc.Player):
         self.substrings = [ '-trailer', 'http://' ]
 
     def onPlayBackStarted(self):
+        log('onPlayBackStopped============================================================================================================')
         xbmc.sleep(1000)
         # Set values based on the file content
         if (self.isPlayingAudio()):
@@ -771,6 +788,7 @@ class Widgets_Player(xbmc.Player):
         self.onPlayBackStopped()
 
     def onPlayBackStopped(self):
+        log('onPlayBackStopped============================================================================================================')
         if self.type == 'movie':
             self.action('movie')
         elif self.type == 'episode':
@@ -780,9 +798,10 @@ class Widgets_Player(xbmc.Player):
         self.type = ""
 
 if (__name__ == "__main__"):
-    log('script version %s started' % __addonversion__)
+    log('============================================================================================================')
+    # log('script version %s started' % __addonversion__)
     Main()
     del Widgets_Monitor
     del Widgets_Player
     del Main
-    log('script version %s stopped' % __addonversion__)
+    # log('script version %s stopped' % __addonversion__)
