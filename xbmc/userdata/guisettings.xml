@@ -80,7 +80,7 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <settinglevel>1</settinglevel>
-        <systemtotaluptime>161</systemtotaluptime>
+        <systemtotaluptime>164</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -101,7 +101,7 @@
         <charset default="true">DEFAULT</charset>
         <country default="true">USA (12h)</country>
         <language default="true">English</language>
-        <subtitlelanguage default="true">original</subtitlelanguage>
+        <subtitlelanguage>Polish</subtitlelanguage>
         <timezone default="true">Europe/Warsaw</timezone>
         <timezonecountry default="true">Poland</timezonecountry>
     </locale>
@@ -289,31 +289,31 @@
     </smb>
     <subtitles>
         <align default="true">0</align>
-        <charset default="true">DEFAULT</charset>
+        <charset>CP1250</charset>
         <color default="true">1</color>
         <custompath default="true"></custompath>
         <font default="true">arial.ttf</font>
         <height default="true">28</height>
-        <languages default="true">English</languages>
-        <movie default="true">-</movie>
+        <languages>English,Polish</languages>
+        <movie>service.subtitles.napiprojekt</movie>
         <overrideassfonts default="true">false</overrideassfonts>
         <pauseonsearch default="true">true</pauseonsearch>
         <stereoscopicdepth default="true">0</stereoscopicdepth>
         <storagemode default="true">0</storagemode>
         <style default="true">1</style>
-        <tv default="true">-</tv>
+        <tv>service.subtitles.napiprojekt</tv>
     </subtitles>
     <system>
         <playlistspath>special://profile/playlists/</playlistspath>
     </system>
     <videolibrary>
         <actorthumbs default="true">true</actorthumbs>
-        <backgroundupdate default="true">false</backgroundupdate>
+        <backgroundupdate>true</backgroundupdate>
         <enabled default="true">true</enabled>
         <flattentvshows default="true">1</flattentvshows>
         <groupmoviesets default="true">false</groupmoviesets>
         <showunwatchedplots default="true">true</showunwatchedplots>
-        <updateonstartup default="true">false</updateonstartup>
+        <updateonstartup>true</updateonstartup>
     </videolibrary>
     <videoplayer>
         <adjustrefreshrate default="true">0</adjustrefreshrate>
@@ -393,7 +393,7 @@
         <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
         <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
         <setting type="bool" name="skin.confluence.DebugGrid">false</setting>
-        <setting type="bool" name="skin.confluence.DebugInfo">true</setting>
+        <setting type="bool" name="skin.confluence.DebugInfo">false</setting>
         <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
         <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
         <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
@@ -546,6 +546,6 @@
     </viewstates>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>0.463332</fvolumelevel>
+        <fvolumelevel>0.174439</fvolumelevel>
     </audio>
 </settings>
