@@ -80,7 +80,7 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <settinglevel>1</settinglevel>
-        <systemtotaluptime>0</systemtotaluptime>
+        <systemtotaluptime>29</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -168,7 +168,7 @@
         <replacelabels default="true">true</replacelabels>
         <selectaction default="true">1</selectaction>
         <stackvideos default="true">false</stackvideos>
-        <startwindow default="true">100024</startwindow>
+        <startwindow>10025</startwindow>
         <watchmodemovies>0</watchmodemovies>
         <watchmodetvshows>0</watchmodetvshows>
         <watchmodemusicvideos>0</watchmodemusicvideos>
@@ -355,9 +355,9 @@
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <preferedstereoscopicmode default="true">0</preferedstereoscopicmode>
-        <resolution>15</resolution>
-        <screen>-1</screen>
-        <screenmode>WINDOW</screenmode>
+        <resolution default="true">16</resolution>
+        <screen default="true">0</screen>
+        <screenmode default="true">DESKTOP</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">3</vsync>
     </videoscreen>
@@ -389,6 +389,9 @@
         <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
         <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
