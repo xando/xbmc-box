@@ -5,13 +5,13 @@
     <video>
         <default pathversion="1"></default>
         <source>
-            <name>Movies</name>
-            <path pathversion="1">smb://JOZEK/Movies/</path>
+            <name>TvShows</name>
+            <path pathversion="1">smb://JOZEK/TvShows/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>TvShows</name>
-            <path pathversion="1">smb://JOZEK/TvShows/</path>
+            <name>Movies</name>
+            <path pathversion="1">smb://JOZEK/Movies/</path>
             <allowsharing>true</allowsharing>
         </source>
     </video>
