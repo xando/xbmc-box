@@ -51,7 +51,7 @@
     </cachevideo>
     <debug>
         <screenshotpath default="true"></screenshotpath>
-        <showloginfo>true</showloginfo>
+        <showloginfo default="true">false</showloginfo>
     </debug>
     <dvds>
         <automenu default="true">false</automenu>
@@ -80,7 +80,7 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <settinglevel>1</settinglevel>
-        <systemtotaluptime>142</systemtotaluptime>
+        <systemtotaluptime>158</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -106,7 +106,7 @@
         <timezonecountry default="true">Poland</timezonecountry>
     </locale>
     <lookandfeel>
-        <enablerssfeeds default="true">true</enablerssfeeds>
+        <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin default="true">skin.confluence</skin>
@@ -355,9 +355,9 @@
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <preferedstereoscopicmode default="true">0</preferedstereoscopicmode>
-        <resolution default="true">16</resolution>
-        <screen default="true">0</screen>
-        <screenmode default="true">DESKTOP</screenmode>
+        <resolution>15</resolution>
+        <screen>-1</screen>
+        <screenmode>WINDOW</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">3</vsync>
     </videoscreen>
@@ -371,7 +371,7 @@
     </window>
     <skinsettings>
         <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
-        <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.UseCustomBackground">true</setting>
         <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
         <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
         <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
