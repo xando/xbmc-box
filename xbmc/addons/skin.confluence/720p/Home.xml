@@ -921,17 +921,19 @@
 					</item>
 					<item id="10">
 						<label>31954</label>
-						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+						<onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos, root)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
 					</item>
 					<item id="11">
 						<label>31955</label>
-						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick condition="Library.HasContent(TvShows)">ActivateWindow(Videos,TVShowTitles,return)</onclick>
+						<onclick condition="!Library.HasContent(TvShows)">ActivateWindow(Videos, root)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 					</item>
 					<item id="3">
 						<label>31956</label>

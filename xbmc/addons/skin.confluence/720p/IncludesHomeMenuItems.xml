@@ -52,11 +52,6 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
-		<control type="button" id="90162">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>31328</label>
-			<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
-		</control>
 		<control type="button" id="90163">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>20434</label>
@@ -67,21 +62,30 @@
 			<include>ButtonHomeSubCommonValues</include>
 			<label>369</label>
 			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 		</control>
 		<control type="button" id="90165">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>135</label>
 			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 		</control>
 		<control type="button" id="90166">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>652</label>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
 		</control>
 		<control type="button" id="90167">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>344</label>
 			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(Movies)</visible>
+		</control>
+		<control type="button" id="90162">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Manage</label>
+			<onclick>ActivateWindow(Videos, 'sources://video')</onclick>
 		</control>
 		<control type="image" id="90168">
 			<width>35</width>
@@ -95,31 +99,37 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
-		<control type="button" id="90172">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>31328</label>
-			<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
-		</control>
 		<control type="button" id="90173">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>369</label>
 			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(TvShows)</visible>
 		</control>
 		<control type="button" id="90174">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>135</label>
 			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(TvShows)</visible>
 		</control>
 		<control type="button" id="90175">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>652</label>
 			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(TvShows)</visible>
 		</control>
 		<control type="button" id="90176">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>344</label>
 			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
+			<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Library.HasContent(TvShows)</visible>
 		</control>
+
+		<control type="button" id="90172">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Manage</label>
+			<onclick>ActivateWindow(Videos, 'sources://video')</onclick>
+		</control>
+
 		<control type="image" id="90177">
 			<width>35</width>
 			<height>35</height>
