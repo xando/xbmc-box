@@ -51,7 +51,7 @@
     </cachevideo>
     <debug>
         <screenshotpath default="true"></screenshotpath>
-        <showloginfo default="true">false</showloginfo>
+        <showloginfo>true</showloginfo>
     </debug>
     <dvds>
         <automenu default="true">false</automenu>
@@ -73,14 +73,14 @@
         <showaddsourcebuttons default="true">true</showaddsourcebuttons>
         <showextensions default="true">true</showextensions>
         <showhidden default="true">false</showhidden>
-        <showparentdiritems default="true">true</showparentdiritems>
+        <showparentdiritems>false</showparentdiritems>
     </filelists>
     <general>
         <addonautoupdate default="true">true</addonautoupdate>
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <settinglevel>1</settinglevel>
-        <systemtotaluptime>29</systemtotaluptime>
+        <systemtotaluptime>142</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -382,16 +382,21 @@
         <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">true</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">true</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
         <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
         <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
         <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
         <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.DebugGrid">false</setting>
+        <setting type="bool" name="skin.confluence.DebugInfo">true</setting>
+        <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
@@ -413,6 +418,9 @@
         <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
         <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
         <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.confluence.Startup_Playlist_Path"></setting>
+        <setting type="string" name="skin.confluence.LyricScript_Path"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton6"></setting>
     </skinsettings>
     <resolutions />
     <defaultvideosettings>
