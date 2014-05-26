@@ -15,18 +15,7 @@
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
-		<control type="image">
-			<description>LOGO</description>
-			<left>0</left>
-			<top>5</top>
-			<width>170</width>
-			<height>100</height>
-			<aspectratio aligny="top" align="left">keep</aspectratio>
-			<texture>xbmc-logo.png</texture>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<visible>!Skin.HasSetting(homepageWeatherinfo)</visible>
-		</control>
+		
 		<!-- Music Info -->
 		<control type="group">
 			<left>0</left>
