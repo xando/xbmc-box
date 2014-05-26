@@ -80,7 +80,7 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <settinglevel>1</settinglevel>
-        <systemtotaluptime>158</systemtotaluptime>
+        <systemtotaluptime>161</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -113,7 +113,7 @@
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin default="true">SKINDEFAULT</soundskin>
+        <soundskin>OFF</soundskin>
         <startupwindow default="true">10000</startupwindow>
     </lookandfeel>
     <masterlock>
@@ -188,7 +188,7 @@
         <usehttpproxy default="true">false</usehttpproxy>
     </network>
     <pictures>
-        <displayresolution default="true">14</displayresolution>
+        <displayresolution>16</displayresolution>
         <generatethumbs default="true">true</generatethumbs>
         <showvideos default="true">true</showvideos>
         <useexifrotation default="true">true</useexifrotation>
@@ -255,11 +255,11 @@
         <usemusicvisinstead default="true">true</usemusicvisinstead>
     </screensaver>
     <services>
-        <airplay default="true">false</airplay>
+        <airplay>true</airplay>
         <airplaypassword default="true"></airplaypassword>
         <airplayvolumecontrol default="true">true</airplayvolumecontrol>
         <devicename default="true">XBMC</devicename>
-        <esallinterfaces default="true">false</esallinterfaces>
+        <esallinterfaces>true</esallinterfaces>
         <escontinuousdelay default="true">25</escontinuousdelay>
         <esenabled default="true">true</esenabled>
         <esinitialdelay default="true">750</esinitialdelay>
@@ -267,11 +267,11 @@
         <esport default="true">9777</esport>
         <esportrange default="true">10</esportrange>
         <upnpannounce default="true">true</upnpannounce>
-        <upnpcontroller default="true">false</upnpcontroller>
-        <upnprenderer default="true">false</upnprenderer>
-        <upnpserver default="true">false</upnpserver>
+        <upnpcontroller>true</upnpcontroller>
+        <upnprenderer>true</upnprenderer>
+        <upnpserver>true</upnpserver>
         <useairplaypassword default="true">false</useairplaypassword>
-        <webserver default="true">false</webserver>
+        <webserver>true</webserver>
         <webserverpassword default="true"></webserverpassword>
         <webserverport default="true">8080</webserverport>
         <webserverusername default="true">xbmc</webserverusername>
@@ -355,9 +355,9 @@
         <fakefullscreen default="true">true</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <preferedstereoscopicmode default="true">0</preferedstereoscopicmode>
-        <resolution>15</resolution>
-        <screen>-1</screen>
-        <screenmode>WINDOW</screenmode>
+        <resolution default="true">16</resolution>
+        <screen default="true">0</screen>
+        <screenmode default="true">DESKTOP</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">3</vsync>
     </videoscreen>
@@ -397,7 +397,7 @@
         <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
         <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
         <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
-        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath">/home/seba/Dropbox/Projects/xbmc-box/background/wallpaper-778651.jpg</setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
