@@ -213,7 +213,7 @@
 				<height>446</height>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>600</fadetime>
-				<texture background="true">special://skin/backgrounds/settings.jpg</texture>
+				<texture background="true">special://skin/backgrounds/settings2.jpg</texture>
 			</control>
 			<control type="image">
 				<left>272</left>
