@@ -79,8 +79,8 @@
         <addonautoupdate default="true">true</addonautoupdate>
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
-        <settinglevel>1</settinglevel>
-        <systemtotaluptime>164</systemtotaluptime>
+        <settinglevel>3</settinglevel>
+        <systemtotaluptime>229</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">false</enablejoystick>
@@ -98,8 +98,8 @@
     </karaoke>
     <locale>
         <audiolanguage default="true">original</audiolanguage>
-        <charset default="true">DEFAULT</charset>
-        <country default="true">USA (12h)</country>
+        <charset>CP1250</charset>
+        <country>Central Europe</country>
         <language default="true">English</language>
         <subtitlelanguage>Polish</subtitlelanguage>
         <timezone default="true">Europe/Warsaw</timezone>
@@ -383,8 +383,8 @@
         <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">true</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">true</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">true</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">true</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>

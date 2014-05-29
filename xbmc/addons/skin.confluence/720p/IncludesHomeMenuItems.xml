@@ -85,7 +85,7 @@
 		<control type="button" id="90162">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>Manage</label>
-			<onclick>ActivateWindow(Videos, 'sources://video')</onclick>
+			<onclick>ActivateWindow(Videos,files,return)</onclick>
 		</control>
 		<control type="image" id="90168">
 			<width>35</width>
@@ -127,7 +127,7 @@
 		<control type="button" id="90172">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>Manage</label>
-			<onclick>ActivateWindow(Videos, 'sources://video')</onclick>
+			<onclick>ActivateWindow(Videos,files,return)</onclick>
 		</control>
 
 		<control type="image" id="90177">
