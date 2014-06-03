@@ -303,27 +303,39 @@
 		<div class="dialog_container" id="upload_container" style="display;">
 
 			<div class="dialog_window">
-				<form role="form">
-					<h1 class="dialog_heading">Upload Torrent Files</h1>
+				<h1 class="dialog_heading">Upload Torrent Files</h1>
+
+				<form role="form" action="#" method="post" id="torrent_upload_form"
+					  enctype="multipart/form-data" target="torrent_upload_frame">
+
 					<div class="form-group">
-						<label for="exampleInputEmail1">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						<label for="torrent_upload_file">Please select a torrent file to upload:</label>
+						<input type="file" name="torrent_files[]" id="torrent_upload_file"
+							   multiple="multiple" class="form-control" />
 					</div>
+
 					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<label for="torrent_upload_url">Or enter a URL:</label>
+						<input type="url" id="torrent_upload_url" class="form-control"/>
 					</div>
+
 					<div class="form-group">
-						<label for="exampleInputFile">File input</label>
-						<input type="file" id="exampleInputFile">
-						<p class="help-block">Example block-level help text here.</p>
-					</div>
-					<div class="checkbox">
-						<label>
-							<input type="checkbox"> Check me out
+						<label id="add-dialog-folder-label" for="add-dialog-folder-input">
+							Destination folder:
 						</label>
+
+						<select class="form-control">
+							<option value="/home/seba/Videos">Videos</option>
+							<option value="/home/seba/Music">Music</option>
+						</select>
+
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
+
+					<div class="form-group pull-right">
+						<a href="#cancel" id="upload_cancel_button"  class="btn btn-warning">Cancel</a>
+						<a href="#upload" id="upload_confirm_button" class="btn btn-success">Upload</a>
+					</div>
+
 				</form>
 			</div>
 
@@ -334,10 +346,10 @@
 			<!-- 		enctype="multipart/form-data" target="torrent_upload_frame"> -->
 			<!-- 		<div class="dialog_message"> -->
 			<!-- 			<label for="torrent_upload_file">Please select a torrent file to upload:</label> -->
-			<!-- 				<input type="file" name="torrent_files[]" id="torrent_upload_file" multiple="multiple" /> -->
+			<!-- 			<input type="file" name="torrent_files[]" id="torrent_upload_file" multiple="multiple" /> -->
 			<!-- 			<label for="torrent_upload_url">Or enter a URL:</label> -->
-			<!-- 				<input type="url" id="torrent_upload_url"/> -->
-			<!-- 			<label id='add-dialog-folder-label' for="add-dialog-folder-input"> -->
+			<!-- 			<input type="url" id="torrent_upload_url"/> -->
+			<!-- 			<label id="add-dialog-folder-label" for="add-dialog-folder-input"> -->
 			<!-- 				Destination folder: -->
 			<!-- 			</label> -->
 

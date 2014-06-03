@@ -982,8 +982,6 @@ div.dialog_container {
 div.dialog_container div.dialog_window {
   background-color: #eee;
   margin: 0 auto;
-  opacity: .95;
-  border-top: none;
   text-align: left;
   width: 420px;
   z-index: 10;
@@ -1019,29 +1017,6 @@ div.dialog_container div.dialog_window div.dialog_message {
   margin-left: -3px;
   width: 305px;
   overflow: hidden;
-}
-
-div.dialog_container div.dialog_window a {
-  display: block;
-  float: right;
-  margin: 10px 20px 10px -8px;
-  padding: 5px;
-  background-color: #EEE;
-  border: 1px solid #787878;
-  width: 50px;
-  height: 15px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  color: #323232;
-  -webkit-appearance: button;
-  font: -webkit-control;
-  cursor: default;
-}
-
-div.dialog_container div.dialog_window a:hover,
-div.dialog_container div.dialog_window a:active {
-	background: #c0c8d6 url("images/filter_bar.png") bottom repeat-x;
 }
 
 div#upload_container div.dialog_window div.dialog_message label {
