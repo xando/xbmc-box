@@ -328,215 +328,216 @@ ul.torrent_list {
 #prefs-dialog.ui-tabs .ui-tabs-panel {
   padding: 0px;
   -moz-user-select: none;
-  -webkit-user-select: none; }
+  -webkit-user-select: none;
+}
 
 .prefs-section {
-  margin: 10px;
-  text-align: left; }
-  .prefs-section > * {
+	margin: 10px;
+	text-align: left; }
+.prefs-section > * {
     padding-top: 8px;
     padding-left: 8px; }
-  .prefs-section .title {
+.prefs-section .title {
     font-weight: bold;
     font-size: larger;
     padding-left: 0px; }
-  .prefs-section .row .key {
+.prefs-section .row .key {
     float: left;
     padding-top: 3px; }
-    .prefs-section .row .key > * {
-      margin-left: 0px; }
-  .prefs-section .row .value {
+.prefs-section .row .key > * {
+    margin-left: 0px; }
+.prefs-section .row .value {
     margin-left: 150px; }
-    .prefs-section .row .value > * {
-      width: 100%; }
-  .prefs-section .checkbox-row > input {
+.prefs-section .row .value > * {
+    width: 100%; }
+.prefs-section .checkbox-row > input {
     margin: 0px; }
-  .prefs-section .checkbox-row > label {
+.prefs-section .checkbox-row > label {
     margin-left: 5px; }
-  .prefs-section #alternative-speed-limits-title {
+.prefs-section #alternative-speed-limits-title {
     padding-left: 18px;
     background: transparent url("images/blue-turtle.png") no-repeat; }
 
 /***
-****
-****  TORRENT INSPECTOR
-****
-***/
+ ****
+ ****  TORRENT INSPECTOR
+ ****
+ ***/
 div#torrent_inspector {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  text-align: left;
-  padding: 15px;
-  top: 68px;
-  position: fixed;
-  width: 570px;
-  z-index: 5;
-  border-left: 1px solid #888;
-  bottom: 22px;
-  right: 0px;
-  /* Files Inspector Tab */ }
-  div#torrent_inspector #inspector-close {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	text-align: left;
+	padding: 15px;
+	top: 68px;
+	position: fixed;
+	width: 570px;
+	z-index: 5;
+	border-left: 1px solid #888;
+	bottom: 22px;
+	right: 0px;
+/* Files Inspector Tab */ }
+div#torrent_inspector #inspector-close {
     display: none; }
-  div#torrent_inspector #inspector-tabs-wrapper {
+div#torrent_inspector #inspector-tabs-wrapper {
     width: 100%;
     overflow: hidden;
     text-align: center; }
-    div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs {
-      display: inline-block; }
-      div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
-        cursor: pointer;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        display: inline-block;
-        border-style: solid;
-        border-color: #aaa;
-        border-width: 1px;
-        padding: 3px;
-        width: 30px;
-        height: 20px; }
-      div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info {
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-bottomleft: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        background-color: #dddddd;
-        background-image: url("images/inspector-info.png");
-        /* fallback */
-        background-image: url("images/inspector-info.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-        /* Saf4+, Chrome */
-        background-image: url("images/inspector-info.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-        /* Chrome 10+, Saf5.1+ */
-        background-image: url("images/inspector-info.png"), -moz-linear-gradient(top, white, #bbbbbb);
-        /* FF3.6+ */
-        background-image: url("images/inspector-info.png"), -ms-linear-gradient(top, white, #bbbbbb);
-        /* IE10 */
-        background-image: url("images/inspector-info.png"), -o-linear-gradient(top, white, #bbbbbb);
-        /* Opera 11.10+ */
-        background-position: center;
-        background-repeat: no-repeat;
-        border-left-width: 1px; }
-        div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info.selected {
-          background-color: #e6e6ff;
-          background-image: url("images/inspector-info.png");
-          /* fallback */
-          background-image: url("images/inspector-info.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-          /* Saf4+, Chrome */
-          background-image: url("images/inspector-info.png"), -webkit-linear-gradient(top, #cdcdff, white);
-          /* Chrome 10+, Saf5.1+ */
-          background-image: url("images/inspector-info.png"), -moz-linear-gradient(top, #cdcdff, white);
-          /* FF3.6+ */
-          background-image: url("images/inspector-info.png"), -ms-linear-gradient(top, #cdcdff, white);
-          /* IE10 */
-          background-image: url("images/inspector-info.png"), -o-linear-gradient(top, #cdcdff, white);
-          /* Opera 11.10+ */
-          background-position: center;
-          background-repeat: no-repeat; }
-      div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers {
-        background-color: #dddddd;
-        background-image: url("images/inspector-peers.png");
-        /* fallback */
-        background-image: url("images/inspector-peers.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-        /* Saf4+, Chrome */
-        background-image: url("images/inspector-peers.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-        /* Chrome 10+, Saf5.1+ */
-        background-image: url("images/inspector-peers.png"), -moz-linear-gradient(top, white, #bbbbbb);
-        /* FF3.6+ */
-        background-image: url("images/inspector-peers.png"), -ms-linear-gradient(top, white, #bbbbbb);
-        /* IE10 */
-        background-image: url("images/inspector-peers.png"), -o-linear-gradient(top, white, #bbbbbb);
-        /* Opera 11.10+ */
-        background-position: center;
-        background-repeat: no-repeat; }
-        div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers.selected {
-          background-color: #e6e6ff;
-          background-image: url("images/inspector-peers.png");
-          /* fallback */
-          background-image: url("images/inspector-peers.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-          /* Saf4+, Chrome */
-          background-image: url("images/inspector-peers.png"), -webkit-linear-gradient(top, #cdcdff, white);
-          /* Chrome 10+, Saf5.1+ */
-          background-image: url("images/inspector-peers.png"), -moz-linear-gradient(top, #cdcdff, white);
-          /* FF3.6+ */
-          background-image: url("images/inspector-peers.png"), -ms-linear-gradient(top, #cdcdff, white);
-          /* IE10 */
-          background-image: url("images/inspector-peers.png"), -o-linear-gradient(top, #cdcdff, white);
-          /* Opera 11.10+ */
-          background-position: center;
-          background-repeat: no-repeat; }
-      div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers {
-        background-color: #dddddd;
-        background-image: url("images/inspector-trackers.png");
-        /* fallback */
-        background-image: url("images/inspector-trackers.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-        /* Saf4+, Chrome */
-        background-image: url("images/inspector-trackers.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-        /* Chrome 10+, Saf5.1+ */
-        background-image: url("images/inspector-trackers.png"), -moz-linear-gradient(top, white, #bbbbbb);
-        /* FF3.6+ */
-        background-image: url("images/inspector-trackers.png"), -ms-linear-gradient(top, white, #bbbbbb);
-        /* IE10 */
-        background-image: url("images/inspector-trackers.png"), -o-linear-gradient(top, white, #bbbbbb);
-        /* Opera 11.10+ */
-        background-position: center;
-        background-repeat: no-repeat; }
-        div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers.selected {
-          background-color: #e6e6ff;
-          background-image: url("images/inspector-trackers.png");
-          /* fallback */
-          background-image: url("images/inspector-trackers.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-          /* Saf4+, Chrome */
-          background-image: url("images/inspector-trackers.png"), -webkit-linear-gradient(top, #cdcdff, white);
-          /* Chrome 10+, Saf5.1+ */
-          background-image: url("images/inspector-trackers.png"), -moz-linear-gradient(top, #cdcdff, white);
-          /* FF3.6+ */
-          background-image: url("images/inspector-trackers.png"), -ms-linear-gradient(top, #cdcdff, white);
-          /* IE10 */
-          background-image: url("images/inspector-trackers.png"), -o-linear-gradient(top, #cdcdff, white);
-          /* Opera 11.10+ */
-          background-position: center;
-          background-repeat: no-repeat; }
-      div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files {
-        -moz-border-radius-topright: 5px;
-        -moz-border-radius-bottomright: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        background-color: #dddddd;
-        background-image: url("images/inspector-files.png");
-        /* fallback */
-        background-image: url("images/inspector-files.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-        /* Saf4+, Chrome */
-        background-image: url("images/inspector-files.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-        /* Chrome 10+, Saf5.1+ */
-        background-image: url("images/inspector-files.png"), -moz-linear-gradient(top, white, #bbbbbb);
-        /* FF3.6+ */
-        background-image: url("images/inspector-files.png"), -ms-linear-gradient(top, white, #bbbbbb);
-        /* IE10 */
-        background-image: url("images/inspector-files.png"), -o-linear-gradient(top, white, #bbbbbb);
-        /* Opera 11.10+ */
-        background-position: center;
-        background-repeat: no-repeat; }
-        div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files.selected {
-          background-color: #e6e6ff;
-          background-image: url("images/inspector-files.png");
-          /* fallback */
-          background-image: url("images/inspector-files.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-          /* Saf4+, Chrome */
-          background-image: url("images/inspector-files.png"), -webkit-linear-gradient(top, #cdcdff, white);
-          /* Chrome 10+, Saf5.1+ */
-          background-image: url("images/inspector-files.png"), -moz-linear-gradient(top, #cdcdff, white);
-          /* FF3.6+ */
-          background-image: url("images/inspector-files.png"), -ms-linear-gradient(top, #cdcdff, white);
-          /* IE10 */
-          background-image: url("images/inspector-files.png"), -o-linear-gradient(top, #cdcdff, white);
-          /* Opera 11.10+ */
-          background-position: center;
-          background-repeat: no-repeat; }
-  div#torrent_inspector #inspector_header {
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs {
+    display: inline-block; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > * {
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: inline-block;
+    border-style: solid;
+    border-color: #aaa;
+    border-width: 1px;
+    padding: 3px;
+    width: 30px;
+    height: 20px; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #dddddd;
+    background-image: url("images/inspector-info.png");
+    /* fallback */
+    background-image: url("images/inspector-info.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-info.png"), -webkit-linear-gradient(top, white, #bbbbbb);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-info.png"), -moz-linear-gradient(top, white, #bbbbbb);
+    /* FF3.6+ */
+    background-image: url("images/inspector-info.png"), -ms-linear-gradient(top, white, #bbbbbb);
+    /* IE10 */
+    background-image: url("images/inspector-info.png"), -o-linear-gradient(top, white, #bbbbbb);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left-width: 1px; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-info.selected {
+    background-color: #e6e6ff;
+    background-image: url("images/inspector-info.png");
+    /* fallback */
+    background-image: url("images/inspector-info.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-info.png"), -webkit-linear-gradient(top, #cdcdff, white);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-info.png"), -moz-linear-gradient(top, #cdcdff, white);
+    /* FF3.6+ */
+    background-image: url("images/inspector-info.png"), -ms-linear-gradient(top, #cdcdff, white);
+    /* IE10 */
+    background-image: url("images/inspector-info.png"), -o-linear-gradient(top, #cdcdff, white);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers {
+    background-color: #dddddd;
+    background-image: url("images/inspector-peers.png");
+    /* fallback */
+    background-image: url("images/inspector-peers.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-peers.png"), -webkit-linear-gradient(top, white, #bbbbbb);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-peers.png"), -moz-linear-gradient(top, white, #bbbbbb);
+    /* FF3.6+ */
+    background-image: url("images/inspector-peers.png"), -ms-linear-gradient(top, white, #bbbbbb);
+    /* IE10 */
+    background-image: url("images/inspector-peers.png"), -o-linear-gradient(top, white, #bbbbbb);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-peers.selected {
+    background-color: #e6e6ff;
+    background-image: url("images/inspector-peers.png");
+    /* fallback */
+    background-image: url("images/inspector-peers.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-peers.png"), -webkit-linear-gradient(top, #cdcdff, white);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-peers.png"), -moz-linear-gradient(top, #cdcdff, white);
+    /* FF3.6+ */
+    background-image: url("images/inspector-peers.png"), -ms-linear-gradient(top, #cdcdff, white);
+    /* IE10 */
+    background-image: url("images/inspector-peers.png"), -o-linear-gradient(top, #cdcdff, white);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers {
+    background-color: #dddddd;
+    background-image: url("images/inspector-trackers.png");
+    /* fallback */
+    background-image: url("images/inspector-trackers.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-trackers.png"), -webkit-linear-gradient(top, white, #bbbbbb);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-trackers.png"), -moz-linear-gradient(top, white, #bbbbbb);
+    /* FF3.6+ */
+    background-image: url("images/inspector-trackers.png"), -ms-linear-gradient(top, white, #bbbbbb);
+    /* IE10 */
+    background-image: url("images/inspector-trackers.png"), -o-linear-gradient(top, white, #bbbbbb);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-trackers.selected {
+    background-color: #e6e6ff;
+    background-image: url("images/inspector-trackers.png");
+    /* fallback */
+    background-image: url("images/inspector-trackers.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-trackers.png"), -webkit-linear-gradient(top, #cdcdff, white);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-trackers.png"), -moz-linear-gradient(top, #cdcdff, white);
+    /* FF3.6+ */
+    background-image: url("images/inspector-trackers.png"), -ms-linear-gradient(top, #cdcdff, white);
+    /* IE10 */
+    background-image: url("images/inspector-trackers.png"), -o-linear-gradient(top, #cdcdff, white);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files {
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #dddddd;
+    background-image: url("images/inspector-files.png");
+    /* fallback */
+    background-image: url("images/inspector-files.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-files.png"), -webkit-linear-gradient(top, white, #bbbbbb);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-files.png"), -moz-linear-gradient(top, white, #bbbbbb);
+    /* FF3.6+ */
+    background-image: url("images/inspector-files.png"), -ms-linear-gradient(top, white, #bbbbbb);
+    /* IE10 */
+    background-image: url("images/inspector-files.png"), -o-linear-gradient(top, white, #bbbbbb);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files:active, div#torrent_inspector #inspector-tabs-wrapper #inspector-tabs > #inspector-tab-files.selected {
+    background-color: #e6e6ff;
+    background-image: url("images/inspector-files.png");
+    /* fallback */
+    background-image: url("images/inspector-files.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
+    /* Saf4+, Chrome */
+    background-image: url("images/inspector-files.png"), -webkit-linear-gradient(top, #cdcdff, white);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: url("images/inspector-files.png"), -moz-linear-gradient(top, #cdcdff, white);
+    /* FF3.6+ */
+    background-image: url("images/inspector-files.png"), -ms-linear-gradient(top, #cdcdff, white);
+    /* IE10 */
+    background-image: url("images/inspector-files.png"), -o-linear-gradient(top, #cdcdff, white);
+    /* Opera 11.10+ */
+    background-position: center;
+    background-repeat: no-repeat; }
+div#torrent_inspector #inspector_header {
     margin-top: 8px; }
-    div#torrent_inspector #inspector_header #torrent_inspector_name {
-      font-weight: bold;
-      font-size: large; }
-  div#torrent_inspector ul.tier_list {
+div#torrent_inspector #inspector_header #torrent_inspector_name {
+    font-weight: bold;
+    font-size: large; }
+div#torrent_inspector ul.tier_list {
     margin: 2px 0 8px 0;
     width: 100%;
     padding-left: 0px;
@@ -547,37 +548,37 @@ div#torrent_inspector {
     list-style: none;
     list-style-image: none;
     clear: both; }
-    div#torrent_inspector ul.tier_list li {
-      overflow: hidden; }
-    div#torrent_inspector ul.tier_list .tracker_activity {
-      float: left;
-      color: #666;
-      width: 330px;
-      display: table;
-      margin-top: 1px; }
-    div#torrent_inspector ul.tier_list .tracker_activity div {
-      padding: 2px; }
-    div#torrent_inspector ul.tier_list table {
-      float: right;
-      color: #666; }
-    div#torrent_inspector ul.tier_list th {
-      text-align: right; }
-  div#torrent_inspector li.inspector_tracker_entry {
+div#torrent_inspector ul.tier_list li {
+    overflow: hidden; }
+div#torrent_inspector ul.tier_list .tracker_activity {
+    float: left;
+    color: #666;
+    width: 330px;
+    display: table;
+    margin-top: 1px; }
+div#torrent_inspector ul.tier_list .tracker_activity div {
+    padding: 2px; }
+div#torrent_inspector ul.tier_list table {
+    float: right;
+    color: #666; }
+div#torrent_inspector ul.tier_list th {
+    text-align: right; }
+div#torrent_inspector li.inspector_tracker_entry {
     padding: 3px 0 3px 2px;
     display: block; }
-    div#torrent_inspector li.inspector_tracker_entry.odd {
-      background-color: #EEEEEE; }
-  div#torrent_inspector div.tracker_host {
+div#torrent_inspector li.inspector_tracker_entry.odd {
+    background-color: #EEEEEE; }
+div#torrent_inspector div.tracker_host {
     font-size: 1.2em;
     font-weight: bold;
     color: #222; }
-  div#torrent_inspector #inspector_file_list {
+div#torrent_inspector #inspector_file_list {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     text-align: left;
     cursor: default;
     overflow: hidden; }
-  div#torrent_inspector #inspector_file_list {
+div#torrent_inspector #inspector_file_list {
     width: 100%;
     margin: 6px 0 0 0;
     padding-top: 6px;
@@ -588,27 +589,36 @@ div#torrent_inspector {
     list-style-type: none;
     list-style: none;
     list-style-image: none;
-    clear: both; }
-  div#torrent_inspector li.inspector_torrent_file_list_entry {
+    clear: both;
+}
+div#torrent_inspector li.inspector_torrent_file_list_entry {
     padding: 3px 0 3px 2px;
-    display: block; }
-    div#torrent_inspector li.inspector_torrent_file_list_entry.skip {
-      color: #666; }
-    div#torrent_inspector li.inspector_torrent_file_list_entry.even {
-      background-color: #F7F7F7; }
-  div#torrent_inspector div.inspector_torrent_file_list_entry_name {
+    display: block;
+}
+div#torrent_inspector li.inspector_torrent_file_list_entry.skip {
+    color: #666;
+}
+div#torrent_inspector li.inspector_torrent_file_list_entry.even {
+    background-color: #F7F7F7;
+}
+div#torrent_inspector div.inspector_torrent_file_list_entry_name {
     font-size: 1.2em;
     color: black;
     display: inline;
-    margin-left: 0px; }
-  div#torrent_inspector li.inspector_torrent_file_list_entry.skip > .inspector_torrent_file_list_entry_name {
-    color: #999; }
-  div#torrent_inspector div.inspector_torrent_file_list_entry_progress {
+    margin-left: 0px;
+}
+div#torrent_inspector li.inspector_torrent_file_list_entry.skip > .inspector_torrent_file_list_entry_name {
     color: #999;
-    margin-left: 20px; }
-  div#torrent_inspector ul.single_file li.inspector_torrent_file_list_entry > .file_wanted_control,
-  div#torrent_inspector li.inspector_torrent_file_list_entry.complete > .file_wanted_control {
-    cursor: default; }
+}
+div#torrent_inspector div.inspector_torrent_file_list_entry_progress {
+    color: #999;
+    margin-left: 20px;
+}
+div#torrent_inspector ul.single_file li.inspector_torrent_file_list_entry > .file_wanted_control,
+div#torrent_inspector li.inspector_torrent_file_list_entry.complete > .file_wanted_control {
+    cursor: default;
+}
+
 
 /* Peers Inspector Tab */
 #inspector_peers_list {
@@ -781,6 +791,7 @@ div.file-priority-radiobox {
       background-position: center;
       background-repeat: no-repeat; }
 
+
 /****
 *****
 *****  MAIN WINDOW FOOTER
@@ -819,31 +830,22 @@ div.torrent_footer #compact-button.selected {
 ****/
 div.dialog_container {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0px;
-  margin: 0px;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  color: black;
-  font-size: 1.1em; }
-
-div.dialog_container div.dialog_window {
-  background-color: #eee;
-  margin: 0 auto;
-  text-align: left;
-  width: 420px;
-  z-index: 10;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
-  top: 80px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  div.dialog_container div.dialog_window {
-    top: 0;
-    margin-top: 71px; } }
+div.dialog_container div.dialog_window {
+  position: relative;
+  background-color: #eee;
+  margin: 0 auto;
+  padding: 30px;
+  width: 600px;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px 10px #cccccc;
+}
+
 div.dialog_container .dialog_logo {
   width: 64px;
   height: 64px;
@@ -851,14 +853,6 @@ div.dialog_container .dialog_logo {
   float: left;
   background: transparent url("images/logo.png") top left no-repeat; }
 
-div.dialog_container div.dialog_window h2.dialog_heading {
-  /* display: block; */
-  /* float: left; */
-  width: 305px;
-  font-size: 1.2em;
-  color: black;
-  margin-top: 20px;
-}
 
 div.dialog_container div.dialog_window div.dialog_message {
   float: left;
@@ -890,9 +884,10 @@ div#upload_container div.dialog_window div.dialog_message input[type=checkbox] {
 div#upload_container div.dialog_window div.dialog_message #auto_start_label {
   display: inline; }
 
-div.dialog_container div.dialog_window form {
-  margin: 0;
-  padding: 0px; }
+/* div.dialog_container div.dialog_window form { */
+/*   margin: 0; */
+/*   padding: 0px;  */
+/* } */
 
 div#move_container input#torrent_path {
   width: 286px;

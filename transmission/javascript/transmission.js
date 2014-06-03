@@ -903,7 +903,7 @@ Transmission.prototype =
 		var i, file,
 		    reader,
 		    fileInput   = $('input#torrent_upload_file'),
-		    folderInput = $('input#add-dialog-folder-input'),
+		    folderInput = $('#add-dialog-folder-input'),
 		    startInput  = $('input#torrent_auto_start'),
 		    urlInput    = $('input#torrent_upload_url');
 
