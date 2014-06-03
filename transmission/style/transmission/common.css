@@ -787,181 +787,30 @@ div.file-priority-radiobox {
 *****
 ****/
 div.torrent_footer {
-  height: 22px;
-  border-top: 1px solid #555;
+  border-top: 1px solid #ccc;
   bottom: 0;
   position: fixed;
   width: 100%;
   z-index: 3;
-  background-color: #cccccc;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
-  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: linear-gradient(top, #dddddd, #bbbbbb); }
-  div.torrent_footer > * {
-    float: left;
-    margin: 2px 4px;
-    width: 18px;
-    height: 12px;
-    padding: 2px 8px;
-    float: left;
-    border: 1px solid #888;
-    -moz-user-select: none;
-    -webkit-user-select: none; }
-  div.torrent_footer div.main_container {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #dddddd;
-    background-image: url("images/settings.png");
-    /* fallback */
-    background-image: url("images/settings.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-    /* Saf4+, Chrome */
-    background-image: url("images/settings.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-    /* Chrome 10+, Saf5.1+ */
-    background-image: url("images/settings.png"), -moz-linear-gradient(top, white, #bbbbbb);
-    /* FF3.6+ */
-    background-image: url("images/settings.png"), -ms-linear-gradient(top, white, #bbbbbb);
-    /* IE10 */
-    background-image: url("images/settings.png"), -o-linear-gradient(top, white, #bbbbbb);
-    /* Opera 11.10+ */
-    background-position: center;
-    background-repeat: no-repeat; }
-    div.torrent_footer div.main_container:active, div.torrent_footer div.main_container.selected {
+  background-color: #e7e7e7;
+  height: 40px;
+  padding-top: 2px;
+}
+
+div.torrent_footer #prefs-button:active,
+div.torrent_footer #prefs-button.selected {
       background-color: #e6e6ff;
-      background-image: url("images/settings.png");
-      /* fallback */
-      background-image: url("images/settings.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-      /* Saf4+, Chrome */
-      background-image: url("images/settings.png"), -webkit-linear-gradient(top, #cdcdff, white);
-      /* Chrome 10+, Saf5.1+ */
-      background-image: url("images/settings.png"), -moz-linear-gradient(top, #cdcdff, white);
-      /* FF3.6+ */
-      background-image: url("images/settings.png"), -ms-linear-gradient(top, #cdcdff, white);
-      /* IE10 */
-      background-image: url("images/settings.png"), -o-linear-gradient(top, #cdcdff, white);
-      /* Opera 11.10+ */
-      background-position: center;
-      background-repeat: no-repeat; }
-  div.torrent_footer #prefs-button {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #dddddd;
-    background-image: url("images/wrench.png");
-    /* fallback */
-    background-image: url("images/wrench.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-    /* Saf4+, Chrome */
-    background-image: url("images/wrench.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-    /* Chrome 10+, Saf5.1+ */
-    background-image: url("images/wrench.png"), -moz-linear-gradient(top, white, #bbbbbb);
-    /* FF3.6+ */
-    background-image: url("images/wrench.png"), -ms-linear-gradient(top, white, #bbbbbb);
-    /* IE10 */
-    background-image: url("images/wrench.png"), -o-linear-gradient(top, white, #bbbbbb);
-    /* Opera 11.10+ */
-    background-position: center;
-    background-repeat: no-repeat; }
-    div.torrent_footer #prefs-button:active, div.torrent_footer #prefs-button.selected {
-      background-color: #e6e6ff;
-      background-image: url("images/wrench.png");
-      /* fallback */
-      background-image: url("images/wrench.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-      /* Saf4+, Chrome */
-      background-image: url("images/wrench.png"), -webkit-linear-gradient(top, #cdcdff, white);
-      /* Chrome 10+, Saf5.1+ */
-      background-image: url("images/wrench.png"), -moz-linear-gradient(top, #cdcdff, white);
-      /* FF3.6+ */
-      background-image: url("images/wrench.png"), -ms-linear-gradient(top, #cdcdff, white);
-      /* IE10 */
-      background-image: url("images/wrench.png"), -o-linear-gradient(top, #cdcdff, white);
-      /* Opera 11.10+ */
-      background-position: center;
-      background-repeat: no-repeat; }
-  div.torrent_footer #turtle-button {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #dddddd;
-    background-image: url("images/turtle.png");
-    /* fallback */
-    background-image: url("images/turtle.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-    /* Saf4+, Chrome */
-    background-image: url("images/turtle.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-    /* Chrome 10+, Saf5.1+ */
-    background-image: url("images/turtle.png"), -moz-linear-gradient(top, white, #bbbbbb);
-    /* FF3.6+ */
-    background-image: url("images/turtle.png"), -ms-linear-gradient(top, white, #bbbbbb);
-    /* IE10 */
-    background-image: url("images/turtle.png"), -o-linear-gradient(top, white, #bbbbbb);
-    /* Opera 11.10+ */
-    background-position: center;
-    background-repeat: no-repeat; }
-    div.torrent_footer #turtle-button:active, div.torrent_footer #turtle-button.selected {
-      background-color: #e6e6ff;
-      background-image: url("images/turtle.png");
-      /* fallback */
-      background-image: url("images/turtle.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-      /* Saf4+, Chrome */
-      background-image: url("images/turtle.png"), -webkit-linear-gradient(top, #cdcdff, white);
-      /* Chrome 10+, Saf5.1+ */
-      background-image: url("images/turtle.png"), -moz-linear-gradient(top, #cdcdff, white);
-      /* FF3.6+ */
-      background-image: url("images/turtle.png"), -ms-linear-gradient(top, #cdcdff, white);
-      /* IE10 */
-      background-image: url("images/turtle.png"), -o-linear-gradient(top, #cdcdff, white);
-      /* Opera 11.10+ */
-      background-position: center;
-      background-repeat: no-repeat; }
-    div.torrent_footer #turtle-button:active, div.torrent_footer #turtle-button.selected {
-      background-color: #e6e6ff;
-      background-image: url("images/blue-turtle.png");
-      /* fallback */
-      background-image: url("images/blue-turtle.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-      /* Saf4+, Chrome */
-      background-image: url("images/blue-turtle.png"), -webkit-linear-gradient(top, #cdcdff, white);
-      /* Chrome 10+, Saf5.1+ */
-      background-image: url("images/blue-turtle.png"), -moz-linear-gradient(top, #cdcdff, white);
-      /* FF3.6+ */
-      background-image: url("images/blue-turtle.png"), -ms-linear-gradient(top, #cdcdff, white);
-      /* IE10 */
-      background-image: url("images/blue-turtle.png"), -o-linear-gradient(top, #cdcdff, white);
-      /* Opera 11.10+ */
-      background-position: center;
-      background-repeat: no-repeat; }
-  div.torrent_footer #compact-button {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #dddddd;
-    background-image: url("images/compact.png");
-    /* fallback */
-    background-image: url("images/compact.png"), -webkit-gradient(linear, left top, left bottom, from(white), to(#bbbbbb));
-    /* Saf4+, Chrome */
-    background-image: url("images/compact.png"), -webkit-linear-gradient(top, white, #bbbbbb);
-    /* Chrome 10+, Saf5.1+ */
-    background-image: url("images/compact.png"), -moz-linear-gradient(top, white, #bbbbbb);
-    /* FF3.6+ */
-    background-image: url("images/compact.png"), -ms-linear-gradient(top, white, #bbbbbb);
-    /* IE10 */
-    background-image: url("images/compact.png"), -o-linear-gradient(top, white, #bbbbbb);
-    /* Opera 11.10+ */
-    background-position: center;
-    background-repeat: no-repeat; }
-    div.torrent_footer #compact-button:active, div.torrent_footer #compact-button.selected {
-      background-color: #e6e6ff;
-      background-image: url("images/compact.png");
-      /* fallback */
-      background-image: url("images/compact.png"), -webkit-gradient(linear, left top, left bottom, from(#cdcdff), to(white));
-      /* Saf4+, Chrome */
-      background-image: url("images/compact.png"), -webkit-linear-gradient(top, #cdcdff, white);
-      /* Chrome 10+, Saf5.1+ */
-      background-image: url("images/compact.png"), -moz-linear-gradient(top, #cdcdff, white);
-      /* FF3.6+ */
-      background-image: url("images/compact.png"), -ms-linear-gradient(top, #cdcdff, white);
-      /* IE10 */
-      background-image: url("images/compact.png"), -o-linear-gradient(top, #cdcdff, white);
-      /* Opera 11.10+ */
-      background-position: center;
-      background-repeat: no-repeat; }
+}
+
+div.torrent_footer #turtle-button:active,
+div.torrent_footer #turtle-button.selected {
+    background-color: #e6e6ff;
+}
+
+div.torrent_footer #compact-button:active,
+div.torrent_footer #compact-button.selected {
+    background-color: #e6e6ff;
+}
 
 /****
 *****

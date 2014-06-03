@@ -300,7 +300,7 @@
 			</div>
 		</div>
 
-		<div class="dialog_container" id="upload_container" style="display;">
+		<div class="dialog_container" id="upload_container" style="display:none;">
 
 			<div class="dialog_window">
 				<h1 class="dialog_heading">Upload Torrent Files</h1>
@@ -357,79 +357,112 @@
 			</div>
 		</div>
 
-		<div class="torrent_footer">
-			<ul id="settings_menu" title="Settings Menu">
-				<li id="button">&nbsp;
-					<ul id="footer_super_menu">
-						<li id="about-button">About</li>
-						<li class="separator"></li>
-						<li id="homepage">Transmission Homepage</li>
-						<li id="tipjar">Transmission Tip Jar</li>
-						<li class="separator"></li>
-						<li id="statistics">Statistics</li>
-						<li id="toggle_notifications" style="display: none">Notifcations</li>
-						<li class="separator"></li>
-						<li>Total Download Rate
-							<ul id="footer_download_rate_menu">
-								<li id="unlimited_download_rate">Unlimited</li>
-								<li id="limited_download_rate">Limit (10 kB/s)</li>
+		<div class="torrent_footer container-fluid">
+
+
+			<div class="btn-group">
+
+				<div title="Preferences" class="btn btn-default">
+					<ul id="settings_menu" title="Settings Menu">
+						<li id="button">
+							<span class="glyphicon glyphicon-transfer"></span>
+							<ul id="footer_super_menu">
+								<li id="about-button">About</li>
 								<li class="separator"></li>
-								<li class='download-speed'>5 kB/s</li>
-								<li class='download-speed'>10 kB/s</li>
-								<li class='download-speed'>20 kB/s</li>
-								<li class='download-speed'>30 kB/s</li>
-								<li class='download-speed'>40 kB/s</li>
-								<li class='download-speed'>50 kB/s</li>
-								<li class='download-speed'>75 kB/s</li>
-								<li class='download-speed'>100 kB/s</li>
-								<li class='download-speed'>150 kB/s</li>
-								<li class='download-speed'>200 kB/s</li>
-								<li class='download-speed'>250 kB/s</li>
-								<li class='download-speed'>500 kB/s</li>
-								<li class='download-speed'>750 kB/s</li>
-							</ul>
-						</li>
-						<li>Total Upload Rate
-							<ul id="footer_upload_rate_menu">
-								<li id="unlimited_upload_rate">Unlimited</li>
-								<li id="limited_upload_rate">Limit (10 kB/s)</li>
+								<li id="homepage">Transmission Homepage</li>
+								<li id="tipjar">Transmission Tip Jar</li>
 								<li class="separator"></li>
-								<li class='upload-speed'>5 kB/s</li>
-								<li class='upload-speed'>10 kB/s</li>
-								<li class='upload-speed'>20 kB/s</li>
-								<li class='upload-speed'>30 kB/s</li>
-								<li class='upload-speed'>40 kB/s</li>
-								<li class='upload-speed'>50 kB/s</li>
-								<li class='upload-speed'>75 kB/s</li>
-								<li class='upload-speed'>100 kB/s</li>
-								<li class='upload-speed'>150 kB/s</li>
-								<li class='upload-speed'>200 kB/s</li>
-								<li class='upload-speed'>250 kB/s</li>
-								<li class='upload-speed'>500 kB/s</li>
-								<li class='upload-speed'>750 kB/s</li>
-							</ul>
-						</li>
-						<li class="separator"></li>
-						<li>Sort Transfers By
-							<ul id="footer_sort_menu">
-								<li class='sort-mode' id="sort_by_queue_order">Queue Order</li>
-								<li class='sort-mode' id="sort_by_activity">Activity</li>
-								<li class='sort-mode' id="sort_by_age">Age</li>
-								<li class='sort-mode' id="sort_by_name">Name</li>
-								<li class='sort-mode' id="sort_by_percent_completed">Progress</li>
-								<li class='sort-mode' id="sort_by_ratio">Ratio</li>
-								<li class='sort-mode' id="sort_by_size">Size</li>
-								<li class='sort-mode' id="sort_by_state">State</li>
+								<li id="statistics">Statistics</li>
+								<li id="toggle_notifications" style="display: none">Notifcations</li>
 								<li class="separator"></li>
-								<li id="reverse_sort_order">Reverse Sort Order</li>
+								<li>Total Download Rate
+									<ul id="footer_download_rate_menu">
+										<li id="unlimited_download_rate">Unlimited</li>
+										<li id="limited_download_rate">Limit (10 kB/s)</li>
+										<li class="separator"></li>
+										<li class='download-speed'>5 kB/s</li>
+										<li class='download-speed'>10 kB/s</li>
+										<li class='download-speed'>20 kB/s</li>
+										<li class='download-speed'>30 kB/s</li>
+										<li class='download-speed'>40 kB/s</li>
+										<li class='download-speed'>50 kB/s</li>
+										<li class='download-speed'>75 kB/s</li>
+										<li class='download-speed'>100 kB/s</li>
+										<li class='download-speed'>150 kB/s</li>
+										<li class='download-speed'>200 kB/s</li>
+										<li class='download-speed'>250 kB/s</li>
+										<li class='download-speed'>500 kB/s</li>
+										<li class='download-speed'>750 kB/s</li>
+									</ul>
+								</li>
+								<li>Total Upload Rate
+									<ul id="footer_upload_rate_menu">
+										<li id="unlimited_upload_rate">Unlimited</li>
+										<li id="limited_upload_rate">Limit (10 kB/s)</li>
+										<li class="separator"></li>
+										<li class='upload-speed'>5 kB/s</li>
+										<li class='upload-speed'>10 kB/s</li>
+										<li class='upload-speed'>20 kB/s</li>
+										<li class='upload-speed'>30 kB/s</li>
+										<li class='upload-speed'>40 kB/s</li>
+										<li class='upload-speed'>50 kB/s</li>
+										<li class='upload-speed'>75 kB/s</li>
+										<li class='upload-speed'>100 kB/s</li>
+										<li class='upload-speed'>150 kB/s</li>
+										<li class='upload-speed'>200 kB/s</li>
+										<li class='upload-speed'>250 kB/s</li>
+										<li class='upload-speed'>500 kB/s</li>
+										<li class='upload-speed'>750 kB/s</li>
+									</ul>
+								</li>
+								<li class="separator"></li>
+								<li>Sort Transfers By
+									<ul id="footer_sort_menu">
+										<li class='sort-mode' id="sort_by_queue_order">Queue Order</li>
+										<li class='sort-mode' id="sort_by_activity">Activity</li>
+										<li class='sort-mode' id="sort_by_age">Age</li>
+										<li class='sort-mode' id="sort_by_name">Name</li>
+										<li class='sort-mode' id="sort_by_percent_completed">Progress</li>
+										<li class='sort-mode' id="sort_by_ratio">Ratio</li>
+										<li class='sort-mode' id="sort_by_size">Size</li>
+										<li class='sort-mode' id="sort_by_state">State</li>
+										<li class="separator"></li>
+										<li id="reverse_sort_order">Reverse Sort Order</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 					</ul>
-				</li>
-			</ul>
-			<div id="prefs-button" title="Edit Preferences...">&nbsp;</div>
-			<div id="turtle-button" title="Alternative Speed Limits">&nbsp;</div>
-			<div id="compact-button" title="Compact View">&nbsp;</div>
+				</div>
+
+				<!-- <div class="btn-group dropup"> -->
+
+				<!-- 	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> -->
+				<!-- 		<span class="glyphicon glyphicon-transfer"></span> -->
+				<!-- 	</button> -->
+
+				<!-- 	<ul class="dropdown-menu" role="menu"> -->
+				<!-- 		<li><a href="#">Action</a></li> -->
+				<!-- 		<li><a href="#">Another action</a></li> -->
+				<!-- 		<li><a href="#">Something else here</a></li> -->
+				<!-- 		<li class="divider"></li> -->
+				<!-- 		<li><a href="#">Separated link</a></li> -->
+				<!-- 	</ul> -->
+				<!-- </div> -->
+
+				<div id="prefs-button" title="Preferences" class="btn btn-default">
+					<span class="glyphicon glyphicon-wrench"></span>
+				</div>
+
+				<div id="turtle-button" title="Alternative Speed Limits" class="btn btn-default">
+					<span class="glyphicon glyphicon-dashboard"></span>
+				</div>
+
+				<div id="compact-button" title="Compact View" class="btn btn-default">
+					<span class="glyphicon glyphicon-tasks"></span>
+				</div>
+			</div>
+
 		</div>
 
 		<div class="contextMenu" id="torrent_context_menu">
