@@ -109,49 +109,50 @@ div#toolbar {
 ****  STATUSBAR
 ****
 ***/
-#statusbar {
-  /* height: 26px; */
-  /* width: 100%; */
-  border-bottom: 1px solid #AAA;
-  /* overflow: hidden; */
-  /* position: relative; */
-  background-color: #eeeeee;
 
-  /* background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb)); */
-  /* background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb); */
-  /* background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb); */
-  /* background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb); */
-  /* background-image: -o-linear-gradient(top, #dddddd, #bbbbbb); */
-  /* background-image: linear-gradient(top, #dddddd, #bbbbbb);  */
+#statusbar {
+  border-bottom: 1px solid #AAA;
+  background-color: #eeeeee;
+}
+
+#statusbar form {
+	padding: 2px 0;
 }
 
 #statusbar #filter input#torrent_search.blur {
     color: #999;
 }
+
 #statusbar #filter #filter-count {
     margin-left: 8px;
 }
+
 #statusbar #speed-info {
     margin-top: 5px;
     margin-right: 10px;
 }
+
 #statusbar #speed-info * {
     display: inline-block;
 }
+
 #statusbar #speed-info #speed-up-icon {
     margin-left: 8px;
     width: 8px;
     height: 8px;
     background: url("images/arrow-up.png") bottom no-repeat;
 }
+
 #statusbar #speed-info #speed-dn-icon {
     width: 8px;
     height: 8px;
     background: url("images/arrow-down.png") bottom no-repeat;
 }
+
 #statusbar #speed-info #speed-up-label {
 	color: red;
 }
+
 #statusbar #speed-info #speed-dn-label {
 	color: green;
 }
